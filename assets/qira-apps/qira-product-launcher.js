@@ -1,4 +1,4 @@
-/*! Qira Product Launcher v1.0.0 — generated from canonical registry 471069464c1ce0840ad2712c0ea630cdbaffd371
+/*! Qira Product Launcher v1.0.0 — generated from canonical registry 1a4cc4e6f2335060e2253c0bdc027c77d974dae8
  * Do not edit by hand. Run: node packages/qira-navigation/scripts/generate.mjs
  */
 (function () {
@@ -73,10 +73,10 @@
     } catch (e) {}
   }
 
-  var ICONS = {"flows":"<svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"5\" cy=\"6\" r=\"2.25\"/><circle cx=\"12\" cy=\"12\" r=\"2.25\"/><circle cx=\"19\" cy=\"18\" r=\"2.25\"/><path d=\"M7.2 7.2L9.8 10.2\"/><path d=\"M14.2 13.8L16.8 16.8\"/></svg>","oort":"<svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><ellipse cx=\"12\" cy=\"12\" rx=\"9\" ry=\"4.5\" transform=\"rotate(-25 12 12)\"/><ellipse cx=\"12\" cy=\"12\" rx=\"9\" ry=\"4.5\" transform=\"rotate(55 12 12)\"/></svg>","qev":"<svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3.5l7 2.5v5.2c0 4.4-2.9 7.6-7 9.3-4.1-1.7-7-4.9-7-9.3V6L12 3.5z\"/><path d=\"M9 12.2l2 2 4-4.5\"/></svg>","lolm":"<svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"5\" width=\"16\" height=\"4\" rx=\"1.2\"/><rect x=\"4\" y=\"10\" width=\"16\" height=\"4\" rx=\"1.2\"/><rect x=\"4\" y=\"15\" width=\"12\" height=\"4\" rx=\"1.2\"/></svg>","ledger":"<svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"3.5\" width=\"14\" height=\"17\" rx=\"1.5\"/><path d=\"M9 8h6M9 12h6M9 16h4\"/></svg>","aex":"<svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5.5 17.5a8 8 0 1113 0\"/><path d=\"M12 14.5l3.5-5.5\"/><circle cx=\"12\" cy=\"14.5\" r=\"1.25\" fill=\"currentColor\" stroke=\"none\"/></svg>"};
+  var ICONS = {"flows":"<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"5\" cy=\"6\" r=\"2.25\"/><circle cx=\"12\" cy=\"12\" r=\"2.25\"/><circle cx=\"19\" cy=\"18\" r=\"2.25\"/><path d=\"M7.2 7.2L9.8 10.2\"/><path d=\"M14.2 13.8L16.8 16.8\"/></svg>","oort":"<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><ellipse cx=\"12\" cy=\"12\" rx=\"9\" ry=\"4.5\" transform=\"rotate(-25 12 12)\"/><ellipse cx=\"12\" cy=\"12\" rx=\"9\" ry=\"4.5\" transform=\"rotate(55 12 12)\"/></svg>","qev":"<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3.5l7 2.5v5.2c0 4.4-2.9 7.6-7 9.3-4.1-1.7-7-4.9-7-9.3V6L12 3.5z\"/><path d=\"M9 12.2l2 2 4-4.5\"/></svg>","lolm":"<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"4\" y=\"5\" width=\"16\" height=\"4\" rx=\"1.2\"/><rect x=\"4\" y=\"10\" width=\"16\" height=\"4\" rx=\"1.2\"/><rect x=\"4\" y=\"15\" width=\"12\" height=\"4\" rx=\"1.2\"/></svg>","ledger":"<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"5\" y=\"3.5\" width=\"14\" height=\"17\" rx=\"1.5\"/><path d=\"M9 8h6M9 12h6M9 16h4\"/></svg>","aex":"<svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5.5 17.5a8 8 0 1113 0\"/><path d=\"M12 14.5l3.5-5.5\"/><circle cx=\"12\" cy=\"14.5\" r=\"1.25\" fill=\"currentColor\" stroke=\"none\"/></svg>"};
 
   function gridIcon() {
-    return '<svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="1.6"/><circle cx="9" cy="3" r="1.6"/><circle cx="15" cy="3" r="1.6"/><circle cx="3" cy="9" r="1.6"/><circle cx="9" cy="9" r="1.6"/><circle cx="15" cy="9" r="1.6"/><circle cx="3" cy="15" r="1.6"/><circle cx="9" cy="15" r="1.6"/><circle cx="15" cy="15" r="1.6"/></svg>';
+    return '<svg width="20" height="20" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="1.55"/><circle cx="9" cy="3" r="1.55"/><circle cx="15" cy="3" r="1.55"/><circle cx="3" cy="9" r="1.55"/><circle cx="9" cy="9" r="1.55"/><circle cx="15" cy="9" r="1.55"/><circle cx="3" cy="15" r="1.55"/><circle cx="9" cy="15" r="1.55"/><circle cx="15" cy="15" r="1.55"/></svg>';
   }
 
   function resolveTheme(attr) {
@@ -144,7 +144,7 @@
       html += '<div id="' + panelId + '" class="qira-launcher__panel" role="dialog" aria-modal="true" aria-label="Qira Apps" data-qira-panel part="panel">';
       html += '<div class="qira-launcher__header"><h2 class="qira-launcher__title">Qira Apps</h2>';
       html += '<button type="button" class="qira-launcher__close" aria-label="Close Qira Apps" data-close>';
-      html += '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>';
+      html += '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>';
       html += "</button></div>";
       html += '<div class="qira-launcher__grid" data-qira-grid="">';
       for (var i = 0; i < products.length; i++) {
@@ -247,22 +247,25 @@
       var isCurrent = current && p.id === current;
       var disabled = !clickable(p);
       var badge = "";
-      if (isCurrent) badge = '<span class="qira-launcher__badge qira-launcher__badge--here">Here</span>';
-      else if (p.status === "coming_soon") badge = '<span class="qira-launcher__badge qira-launcher__badge--soon" aria-label="' + p.name + ' Coming Soon">Coming Soon</span>';
+      if (isCurrent) badge = '<span class="qira-launcher__badge qira-launcher__badge--here" aria-hidden="true">Here</span>';
+      else if (p.status === "coming_soon") badge = '<span class="qira-launcher__badge qira-launcher__badge--soon">Soon</span>';
       else if (p.status === "research") badge = '<span class="qira-launcher__badge qira-launcher__badge--research">Research</span>';
-      var desc = disabled && p.status === "coming_soon" ? "Coming Soon" : p.shortDescription;
+      var desc = p.shortDescription || "";
       var icon = ICONS[p.id] || "";
       var cls = "qira-launcher__tile" + (isCurrent ? " qira-launcher__tile--current" : "") + (disabled ? " qira-launcher__tile--disabled" : "");
-      var body = '<div class="qira-launcher__tile-top"><span class="qira-launcher__icon" aria-hidden="true">' + icon + "</span>" + badge + "</div>";
-      body += '<p class="qira-launcher__name">' + p.name + "</p>";
-      body += '<p class="qira-launcher__desc">' + desc + "</p>";
+      var tip = p.tooltip.replace(/"/g, "&quot;");
+      var body = '<div class="qira-launcher__tile-top"><span class="qira-launcher__icon" aria-hidden="true">' + icon + "</span></div>";
+      body += '<div class="qira-launcher__meta"><p class="qira-launcher__name">' + p.name + "</p>";
+      if (badge) body += badge;
+      body += '<p class="qira-launcher__desc">' + desc + "</p></div>";
+      var ariaExtra = isCurrent ? ", current app" : (disabled ? ", Coming Soon" : (desc ? ", " + desc : ""));
       if (disabled) {
-        return '<div class="' + cls + '" role="link" aria-disabled="true" aria-label="' + p.name + ', Coming Soon" data-product-id="' + p.id + '" data-disabled="true" data-tooltip="' + p.tooltip.replace(/"/g, "&quot;") + '" tabindex="0">' + body + "</div>";
+        return '<div class="' + cls + '" role="link" aria-disabled="true" aria-label="' + p.name + ariaExtra + '" title="' + tip + '" data-product-id="' + p.id + '" data-disabled="true" data-tooltip="' + tip + '" tabindex="0">' + body + "</div>";
       }
       if (isCurrent || !p.url) {
-        return '<div class="' + cls + '" role="link" aria-current="page" aria-label="' + p.name + ', current app" data-product-id="' + p.id + '" data-current="true" data-tooltip="' + p.tooltip.replace(/"/g, "&quot;") + '" tabindex="0">' + body + "</div>";
+        return '<div class="' + cls + '" role="link" aria-current="page" aria-label="' + p.name + ariaExtra + '" title="' + tip + '" data-product-id="' + p.id + '" data-current="true" data-tooltip="' + tip + '" tabindex="0">' + body + "</div>";
       }
-      return '<a class="' + cls + '" href="' + p.url + '" data-product-id="' + p.id + '" data-tooltip="' + p.tooltip.replace(/"/g, "&quot;") + '">' + body + "</a>";
+      return '<a class="' + cls + '" href="' + p.url + '" aria-label="' + p.name + ariaExtra + '" title="' + tip + '" data-product-id="' + p.id + '" data-tooltip="' + tip + '">' + body + "</a>";
     }
 
     _showTip(el, text) {
