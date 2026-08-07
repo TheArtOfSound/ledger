@@ -1,0 +1,4363 @@
+{
+  "generatedAt": "2026-08-07T02:28:50.632Z",
+  "timezone": "America/Phoenix",
+  "source": "local_mac_sanitized_ccusage",
+  "collectorVersion": "0.4.0",
+  "isSampleData": false,
+  "totals": {
+    "inputTokens": 327766243,
+    "outputTokens": 97786161,
+    "cacheCreationTokens": 684907717,
+    "cacheReadTokens": 36769875032,
+    "cachedTokens": 37454782749,
+    "freshTokens": 425552404,
+    "totalTokens": 37880335153,
+    "estimatedCostUsd": null
+  },
+  "providers": {
+    "codex": {
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 315124720,
+      "outputTokens": 32200371,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 11033179392,
+      "cachedTokens": 11033179392,
+      "freshTokens": 347325091,
+      "totalTokens": 11380504483,
+      "estimatedCostUsd": null
+    },
+    "claude": {
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 12641523,
+      "outputTokens": 65585790,
+      "cacheCreationTokens": 684907717,
+      "cacheReadTokens": 25736695640,
+      "cachedTokens": 26421603357,
+      "freshTokens": 78227313,
+      "totalTokens": 26499830670,
+      "estimatedCostUsd": null
+    }
+  },
+  "daily": [
+    {
+      "date": "2026-02-26",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3370024,
+      "outputTokens": 638898,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 174106368,
+      "cachedTokens": 174106368,
+      "freshTokens": 4008922,
+      "totalTokens": 178115290,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-02-27",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 17405571,
+      "outputTokens": 1898364,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 744860416,
+      "cachedTokens": 744860416,
+      "freshTokens": 19303935,
+      "totalTokens": 764164351,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-02-28",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 10856567,
+      "outputTokens": 873714,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 284934912,
+      "cachedTokens": 284934912,
+      "freshTokens": 11730281,
+      "totalTokens": 296665193,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-03-04",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 10590251,
+      "outputTokens": 1530597,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 303299584,
+      "cachedTokens": 303299584,
+      "freshTokens": 12120848,
+      "totalTokens": 315420432,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-03-05",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 18729295,
+      "outputTokens": 1885418,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 491528448,
+      "cachedTokens": 491528448,
+      "freshTokens": 20614713,
+      "totalTokens": 512143161,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-03-06",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 777698,
+      "outputTokens": 6124,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1239680,
+      "cachedTokens": 1239680,
+      "freshTokens": 783822,
+      "totalTokens": 2023502,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-03-19",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 9233357,
+      "outputTokens": 1364178,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 171899648,
+      "cachedTokens": 171899648,
+      "freshTokens": 10597535,
+      "totalTokens": 182497183,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-03-22",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 414489,
+      "outputTokens": 2470,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 212736,
+      "cachedTokens": 212736,
+      "freshTokens": 416959,
+      "totalTokens": 629695,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-04",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3545790,
+      "outputTokens": 662886,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 135451264,
+      "cachedTokens": 135451264,
+      "freshTokens": 4208676,
+      "totalTokens": 139659940,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-05",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 5380782,
+      "outputTokens": 685384,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 153892352,
+      "cachedTokens": 153892352,
+      "freshTokens": 6066166,
+      "totalTokens": 159958518,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-09",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 642269,
+      "outputTokens": 94662,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 19748992,
+      "cachedTokens": 19748992,
+      "freshTokens": 736931,
+      "totalTokens": 20485923,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-10",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1523025,
+      "outputTokens": 288353,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 78608896,
+      "cachedTokens": 78608896,
+      "freshTokens": 1811378,
+      "totalTokens": 80420274,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-11",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 393,
+      "outputTokens": 32694,
+      "cacheCreationTokens": 2875716,
+      "cacheReadTokens": 94382683,
+      "cachedTokens": 97258399,
+      "freshTokens": 33087,
+      "totalTokens": 97291486,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-11",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2799731,
+      "outputTokens": 262652,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 79107840,
+      "cachedTokens": 79107840,
+      "freshTokens": 3062383,
+      "totalTokens": 82170223,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-13",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 764,
+      "outputTokens": 82281,
+      "cacheCreationTokens": 4299490,
+      "cacheReadTokens": 273557118,
+      "cachedTokens": 277856608,
+      "freshTokens": 83045,
+      "totalTokens": 277939653,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-14",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 317,
+      "outputTokens": 84179,
+      "cacheCreationTokens": 3107982,
+      "cacheReadTokens": 132472704,
+      "cachedTokens": 135580686,
+      "freshTokens": 84496,
+      "totalTokens": 135665182,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-14",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 13185,
+      "outputTokens": 21105,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1589760,
+      "cachedTokens": 1589760,
+      "freshTokens": 34290,
+      "totalTokens": 1624050,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-15",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 590,
+      "outputTokens": 451257,
+      "cacheCreationTokens": 4656260,
+      "cacheReadTokens": 210874829,
+      "cachedTokens": 215531089,
+      "freshTokens": 451847,
+      "totalTokens": 215982936,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-15",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 317905,
+      "outputTokens": 508865,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 38330880,
+      "cachedTokens": 38330880,
+      "freshTokens": 826770,
+      "totalTokens": 39157650,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-16",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 3098,
+      "outputTokens": 324040,
+      "cacheCreationTokens": 2133473,
+      "cacheReadTokens": 96925026,
+      "cachedTokens": 99058499,
+      "freshTokens": 327138,
+      "totalTokens": 99385637,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-16",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 949158,
+      "outputTokens": 102257,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 53390720,
+      "cachedTokens": 53390720,
+      "freshTokens": 1051415,
+      "totalTokens": 54442135,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-17",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 189,
+      "outputTokens": 108467,
+      "cacheCreationTokens": 158888,
+      "cacheReadTokens": 65404521,
+      "cachedTokens": 65563409,
+      "freshTokens": 108656,
+      "totalTokens": 65672065,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-17",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3269791,
+      "outputTokens": 629771,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 359864064,
+      "cachedTokens": 359864064,
+      "freshTokens": 3899562,
+      "totalTokens": 363763626,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-18",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1953,
+      "outputTokens": 1027382,
+      "cacheCreationTokens": 10556980,
+      "cacheReadTokens": 684045973,
+      "cachedTokens": 694602953,
+      "freshTokens": 1029335,
+      "totalTokens": 695632288,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-18",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2474860,
+      "outputTokens": 730671,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 191872768,
+      "cachedTokens": 191872768,
+      "freshTokens": 3205531,
+      "totalTokens": 195078299,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-19",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 7200,
+      "outputTokens": 1007795,
+      "cacheCreationTokens": 3130786,
+      "cacheReadTokens": 688850173,
+      "cachedTokens": 691980959,
+      "freshTokens": 1014995,
+      "totalTokens": 692995954,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-20",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 354,
+      "outputTokens": 176685,
+      "cacheCreationTokens": 2226804,
+      "cacheReadTokens": 93046077,
+      "cachedTokens": 95272881,
+      "freshTokens": 177039,
+      "totalTokens": 95449920,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-20",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1873855,
+      "outputTokens": 296203,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 160234880,
+      "cachedTokens": 160234880,
+      "freshTokens": 2170058,
+      "totalTokens": 162404938,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-21",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 924,
+      "outputTokens": 483708,
+      "cacheCreationTokens": 2629631,
+      "cacheReadTokens": 333448912,
+      "cachedTokens": 336078543,
+      "freshTokens": 484632,
+      "totalTokens": 336563175,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-21",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 4756568,
+      "outputTokens": 644290,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 303805568,
+      "cachedTokens": 303805568,
+      "freshTokens": 5400858,
+      "totalTokens": 309206426,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-22",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 5956764,
+      "outputTokens": 778913,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 329685504,
+      "cachedTokens": 329685504,
+      "freshTokens": 6735677,
+      "totalTokens": 336421181,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-23",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 184,
+      "outputTokens": 240747,
+      "cacheCreationTokens": 651943,
+      "cacheReadTokens": 30733023,
+      "cachedTokens": 31384966,
+      "freshTokens": 240931,
+      "totalTokens": 31625897,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-24",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 172,
+      "outputTokens": 178088,
+      "cacheCreationTokens": 940716,
+      "cacheReadTokens": 52234325,
+      "cachedTokens": 53175041,
+      "freshTokens": 178260,
+      "totalTokens": 53353301,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-28",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 56,
+      "outputTokens": 49454,
+      "cacheCreationTokens": 769298,
+      "cacheReadTokens": 18847217,
+      "cachedTokens": 19616515,
+      "freshTokens": 49510,
+      "totalTokens": 19666025,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-29",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1070,
+      "outputTokens": 924692,
+      "cacheCreationTokens": 9586974,
+      "cacheReadTokens": 299880543,
+      "cachedTokens": 309467517,
+      "freshTokens": 925762,
+      "totalTokens": 310393279,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-04-30",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 2643,
+      "outputTokens": 1378436,
+      "cacheCreationTokens": 5568193,
+      "cacheReadTokens": 1138624796,
+      "cachedTokens": 1144192989,
+      "freshTokens": 1381079,
+      "totalTokens": 1145574068,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-01",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 222,
+      "outputTokens": 157927,
+      "cacheCreationTokens": 1602390,
+      "cacheReadTokens": 55084515,
+      "cachedTokens": 56686905,
+      "freshTokens": 158149,
+      "totalTokens": 56845054,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-02",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 6530523,
+      "outputTokens": 363462,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 104938112,
+      "cachedTokens": 104938112,
+      "freshTokens": 6893985,
+      "totalTokens": 111832097,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-03",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2099959,
+      "outputTokens": 243916,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 160460032,
+      "cachedTokens": 160460032,
+      "freshTokens": 2343875,
+      "totalTokens": 162803907,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-04",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1350180,
+      "outputTokens": 162462,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 117744128,
+      "cachedTokens": 117744128,
+      "freshTokens": 1512642,
+      "totalTokens": 119256770,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-15",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 236,
+      "outputTokens": 143560,
+      "cacheCreationTokens": 842708,
+      "cacheReadTokens": 85703136,
+      "cachedTokens": 86545844,
+      "freshTokens": 143796,
+      "totalTokens": 86689640,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-16",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 508,
+      "outputTokens": 260915,
+      "cacheCreationTokens": 1486023,
+      "cacheReadTokens": 126722639,
+      "cachedTokens": 128208662,
+      "freshTokens": 261423,
+      "totalTokens": 128470085,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-17",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 737,
+      "outputTokens": 538093,
+      "cacheCreationTokens": 2643695,
+      "cacheReadTokens": 238716802,
+      "cachedTokens": 241360497,
+      "freshTokens": 538830,
+      "totalTokens": 241899327,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-17",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 914391,
+      "outputTokens": 109922,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 47532928,
+      "cachedTokens": 47532928,
+      "freshTokens": 1024313,
+      "totalTokens": 48557241,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-18",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 496,
+      "outputTokens": 430669,
+      "cacheCreationTokens": 2550974,
+      "cacheReadTokens": 300128728,
+      "cachedTokens": 302679702,
+      "freshTokens": 431165,
+      "totalTokens": 303110867,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-18",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2601999,
+      "outputTokens": 423199,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 193093632,
+      "cachedTokens": 193093632,
+      "freshTokens": 3025198,
+      "totalTokens": 196118830,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-19",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 133,
+      "outputTokens": 204170,
+      "cacheCreationTokens": 354980,
+      "cacheReadTokens": 21134791,
+      "cachedTokens": 21489771,
+      "freshTokens": 204303,
+      "totalTokens": 21694074,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-19",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 4105915,
+      "outputTokens": 731625,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 312265216,
+      "cachedTokens": 312265216,
+      "freshTokens": 4837540,
+      "totalTokens": 317102756,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-20",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1766128,
+      "outputTokens": 138793,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 53432832,
+      "cachedTokens": 53432832,
+      "freshTokens": 1904921,
+      "totalTokens": 55337753,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-21",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1780,
+      "outputTokens": 616081,
+      "cacheCreationTokens": 2777770,
+      "cacheReadTokens": 243514942,
+      "cachedTokens": 246292712,
+      "freshTokens": 617861,
+      "totalTokens": 246910573,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-21",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3704750,
+      "outputTokens": 463472,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 277197312,
+      "cachedTokens": 277197312,
+      "freshTokens": 4168222,
+      "totalTokens": 281365534,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-22",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 234,
+      "outputTokens": 154550,
+      "cacheCreationTokens": 826897,
+      "cacheReadTokens": 124226091,
+      "cachedTokens": 125052988,
+      "freshTokens": 154784,
+      "totalTokens": 125207772,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-22",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 225600,
+      "outputTokens": 344604,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 68365824,
+      "cachedTokens": 68365824,
+      "freshTokens": 570204,
+      "totalTokens": 68936028,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-23",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 676,
+      "outputTokens": 591542,
+      "cacheCreationTokens": 2926495,
+      "cacheReadTokens": 121027053,
+      "cachedTokens": 123953548,
+      "freshTokens": 592218,
+      "totalTokens": 124545766,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-23",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1955277,
+      "outputTokens": 313887,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 161849600,
+      "cachedTokens": 161849600,
+      "freshTokens": 2269164,
+      "totalTokens": 164118764,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-24",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2462896,
+      "outputTokens": 319766,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 192993408,
+      "cachedTokens": 192993408,
+      "freshTokens": 2782662,
+      "totalTokens": 195776070,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-25",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 830184,
+      "outputTokens": 104487,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 103790208,
+      "cachedTokens": 103790208,
+      "freshTokens": 934671,
+      "totalTokens": 104724879,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-27",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 152,
+      "outputTokens": 93002,
+      "cacheCreationTokens": 470299,
+      "cacheReadTokens": 50607520,
+      "cachedTokens": 51077819,
+      "freshTokens": 93154,
+      "totalTokens": 51170973,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-27",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1802864,
+      "outputTokens": 554080,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 104073472,
+      "cachedTokens": 104073472,
+      "freshTokens": 2356944,
+      "totalTokens": 106430416,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-28",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1682,
+      "outputTokens": 888518,
+      "cacheCreationTokens": 6041375,
+      "cacheReadTokens": 519188149,
+      "cachedTokens": 525229524,
+      "freshTokens": 890200,
+      "totalTokens": 526119724,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-28",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2277075,
+      "outputTokens": 368389,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 97928448,
+      "cachedTokens": 97928448,
+      "freshTokens": 2645464,
+      "totalTokens": 100573912,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-29",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 239344,
+      "outputTokens": 3837736,
+      "cacheCreationTokens": 14952477,
+      "cacheReadTokens": 1370977203,
+      "cachedTokens": 1385929680,
+      "freshTokens": 4077080,
+      "totalTokens": 1390006760,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-29",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1017549,
+      "outputTokens": 501226,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 114347904,
+      "cachedTokens": 114347904,
+      "freshTokens": 1518775,
+      "totalTokens": 115866679,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-30",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 395340,
+      "outputTokens": 2079421,
+      "cacheCreationTokens": 21514012,
+      "cacheReadTokens": 612886150,
+      "cachedTokens": 634400162,
+      "freshTokens": 2474761,
+      "totalTokens": 636874923,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-30",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3911258,
+      "outputTokens": 502133,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 223097344,
+      "cachedTokens": 223097344,
+      "freshTokens": 4413391,
+      "totalTokens": 227510735,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-31",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 21606,
+      "outputTokens": 180407,
+      "cacheCreationTokens": 652816,
+      "cacheReadTokens": 30960941,
+      "cachedTokens": 31613757,
+      "freshTokens": 202013,
+      "totalTokens": 31815770,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-05-31",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 6092825,
+      "outputTokens": 785642,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 401842048,
+      "cachedTokens": 401842048,
+      "freshTokens": 6878467,
+      "totalTokens": 408720515,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-01",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 593649,
+      "outputTokens": 946628,
+      "cacheCreationTokens": 15903283,
+      "cacheReadTokens": 240652685,
+      "cachedTokens": 256555968,
+      "freshTokens": 1540277,
+      "totalTokens": 258096245,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-01",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 42674693,
+      "outputTokens": 834814,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 339528320,
+      "cachedTokens": 339528320,
+      "freshTokens": 43509507,
+      "totalTokens": 383037827,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-02",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 726137,
+      "outputTokens": 2715386,
+      "cacheCreationTokens": 26351560,
+      "cacheReadTokens": 842012366,
+      "cachedTokens": 868363926,
+      "freshTokens": 3441523,
+      "totalTokens": 871805449,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-02",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3676401,
+      "outputTokens": 332464,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 190855680,
+      "cachedTokens": 190855680,
+      "freshTokens": 4008865,
+      "totalTokens": 194864545,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-03",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1005406,
+      "outputTokens": 3706709,
+      "cacheCreationTokens": 18821554,
+      "cacheReadTokens": 1058370422,
+      "cachedTokens": 1077191976,
+      "freshTokens": 4712115,
+      "totalTokens": 1081904091,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-03",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 5841480,
+      "outputTokens": 549916,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 254469760,
+      "cachedTokens": 254469760,
+      "freshTokens": 6391396,
+      "totalTokens": 260861156,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-04",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1070379,
+      "outputTokens": 2356031,
+      "cacheCreationTokens": 10791659,
+      "cacheReadTokens": 421980379,
+      "cachedTokens": 432772038,
+      "freshTokens": 3426410,
+      "totalTokens": 436198448,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-04",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 8579905,
+      "outputTokens": 871891,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 314698496,
+      "cachedTokens": 314698496,
+      "freshTokens": 9451796,
+      "totalTokens": 324150292,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-05",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1380960,
+      "outputTokens": 3104164,
+      "cacheCreationTokens": 25886073,
+      "cacheReadTokens": 1045052505,
+      "cachedTokens": 1070938578,
+      "freshTokens": 4485124,
+      "totalTokens": 1075423702,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-05",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1589324,
+      "outputTokens": 148744,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 92514944,
+      "cachedTokens": 92514944,
+      "freshTokens": 1738068,
+      "totalTokens": 94253012,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-09",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 24241,
+      "outputTokens": 157092,
+      "cacheCreationTokens": 5272618,
+      "cacheReadTokens": 18408867,
+      "cachedTokens": 23681485,
+      "freshTokens": 181333,
+      "totalTokens": 23862818,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-10",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 80672,
+      "outputTokens": 487857,
+      "cacheCreationTokens": 4250701,
+      "cacheReadTokens": 129560135,
+      "cachedTokens": 133810836,
+      "freshTokens": 568529,
+      "totalTokens": 134379365,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-10",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1530096,
+      "outputTokens": 167288,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 67208448,
+      "cachedTokens": 67208448,
+      "freshTokens": 1697384,
+      "totalTokens": 68905832,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-11",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 209737,
+      "outputTokens": 1186190,
+      "cacheCreationTokens": 17641163,
+      "cacheReadTokens": 442195434,
+      "cachedTokens": 459836597,
+      "freshTokens": 1395927,
+      "totalTokens": 461232524,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-11",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1649592,
+      "outputTokens": 105306,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 38544896,
+      "cachedTokens": 38544896,
+      "freshTokens": 1754898,
+      "totalTokens": 40299794,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-12",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 254667,
+      "outputTokens": 1120540,
+      "cacheCreationTokens": 21604650,
+      "cacheReadTokens": 510926119,
+      "cachedTokens": 532530769,
+      "freshTokens": 1375207,
+      "totalTokens": 533905976,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-12",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1896499,
+      "outputTokens": 149843,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 56645760,
+      "cachedTokens": 56645760,
+      "freshTokens": 2046342,
+      "totalTokens": 58692102,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-13",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 362328,
+      "outputTokens": 3328294,
+      "cacheCreationTokens": 22112118,
+      "cacheReadTokens": 886596715,
+      "cachedTokens": 908708833,
+      "freshTokens": 3690622,
+      "totalTokens": 912399455,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-14",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 425774,
+      "outputTokens": 2352464,
+      "cacheCreationTokens": 22379619,
+      "cacheReadTokens": 856988039,
+      "cachedTokens": 879367658,
+      "freshTokens": 2778238,
+      "totalTokens": 882145896,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-15",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 72669,
+      "outputTokens": 28932,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1227904,
+      "cachedTokens": 1227904,
+      "freshTokens": 101601,
+      "totalTokens": 1329505,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-16",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 62584,
+      "outputTokens": 8705,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 2100096,
+      "cachedTokens": 2100096,
+      "freshTokens": 71289,
+      "totalTokens": 2171385,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-17",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 553221,
+      "outputTokens": 47340,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 12223232,
+      "cachedTokens": 12223232,
+      "freshTokens": 600561,
+      "totalTokens": 12823793,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-18",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 43646,
+      "outputTokens": 217862,
+      "cacheCreationTokens": 968869,
+      "cacheReadTokens": 30590593,
+      "cachedTokens": 31559462,
+      "freshTokens": 261508,
+      "totalTokens": 31820970,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-18",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2556169,
+      "outputTokens": 284481,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 73300352,
+      "cachedTokens": 73300352,
+      "freshTokens": 2840650,
+      "totalTokens": 76141002,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-19",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 72308,
+      "outputTokens": 457260,
+      "cacheCreationTokens": 11648485,
+      "cacheReadTokens": 143743374,
+      "cachedTokens": 155391859,
+      "freshTokens": 529568,
+      "totalTokens": 155921427,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-20",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 43912,
+      "outputTokens": 505234,
+      "cacheCreationTokens": 6198028,
+      "cacheReadTokens": 120953009,
+      "cachedTokens": 127151037,
+      "freshTokens": 549146,
+      "totalTokens": 127700183,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-21",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 38259,
+      "outputTokens": 556229,
+      "cacheCreationTokens": 6849404,
+      "cacheReadTokens": 318252477,
+      "cachedTokens": 325101881,
+      "freshTokens": 594488,
+      "totalTokens": 325696369,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-24",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 31138,
+      "outputTokens": 274002,
+      "cacheCreationTokens": 3862974,
+      "cacheReadTokens": 99715186,
+      "cachedTokens": 103578160,
+      "freshTokens": 305140,
+      "totalTokens": 103883300,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-25",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 398190,
+      "outputTokens": 1568934,
+      "cacheCreationTokens": 18068268,
+      "cacheReadTokens": 462808747,
+      "cachedTokens": 480877015,
+      "freshTokens": 1967124,
+      "totalTokens": 482844139,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-25",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3421643,
+      "outputTokens": 225870,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 81933056,
+      "cachedTokens": 81933056,
+      "freshTokens": 3647513,
+      "totalTokens": 85580569,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-26",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 536915,
+      "outputTokens": 2406703,
+      "cacheCreationTokens": 26700626,
+      "cacheReadTokens": 779104572,
+      "cachedTokens": 805805198,
+      "freshTokens": 2943618,
+      "totalTokens": 808748816,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-27",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 127543,
+      "outputTokens": 1600946,
+      "cacheCreationTokens": 36149156,
+      "cacheReadTokens": 534521192,
+      "cachedTokens": 570670348,
+      "freshTokens": 1728489,
+      "totalTokens": 572398837,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-28",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 33670,
+      "outputTokens": 676540,
+      "cacheCreationTokens": 8725599,
+      "cacheReadTokens": 165889365,
+      "cachedTokens": 174614964,
+      "freshTokens": 710210,
+      "totalTokens": 175325174,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-28",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3862534,
+      "outputTokens": 617728,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 133937920,
+      "cachedTokens": 133937920,
+      "freshTokens": 4480262,
+      "totalTokens": 138418182,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-29",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 4743,
+      "outputTokens": 4401,
+      "cacheCreationTokens": 675419,
+      "cacheReadTokens": 2783847,
+      "cachedTokens": 3459266,
+      "freshTokens": 9144,
+      "totalTokens": 3468410,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-29",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1016038,
+      "outputTokens": 127663,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 22493184,
+      "cachedTokens": 22493184,
+      "freshTokens": 1143701,
+      "totalTokens": 23636885,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-06-30",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 445846,
+      "outputTokens": 46512,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 10188032,
+      "cachedTokens": 10188032,
+      "freshTokens": 492358,
+      "totalTokens": 10680390,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-01",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 100182,
+      "outputTokens": 433369,
+      "cacheCreationTokens": 9533917,
+      "cacheReadTokens": 215016961,
+      "cachedTokens": 224550878,
+      "freshTokens": 533551,
+      "totalTokens": 225084429,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-02",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 366966,
+      "outputTokens": 693110,
+      "cacheCreationTokens": 13229935,
+      "cacheReadTokens": 262003149,
+      "cachedTokens": 275233084,
+      "freshTokens": 1060076,
+      "totalTokens": 276293160,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-03",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 100742,
+      "outputTokens": 79943,
+      "cacheCreationTokens": 2225227,
+      "cacheReadTokens": 38424761,
+      "cachedTokens": 40649988,
+      "freshTokens": 180685,
+      "totalTokens": 40830673,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-04",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 468009,
+      "outputTokens": 915765,
+      "cacheCreationTokens": 12038121,
+      "cacheReadTokens": 426533051,
+      "cachedTokens": 438571172,
+      "freshTokens": 1383774,
+      "totalTokens": 439954946,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-05",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 648719,
+      "outputTokens": 1143280,
+      "cacheCreationTokens": 14749561,
+      "cacheReadTokens": 359817966,
+      "cachedTokens": 374567527,
+      "freshTokens": 1791999,
+      "totalTokens": 376359526,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-06",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 87650,
+      "outputTokens": 274413,
+      "cacheCreationTokens": 5031469,
+      "cacheReadTokens": 103955994,
+      "cachedTokens": 108987463,
+      "freshTokens": 362063,
+      "totalTokens": 109349526,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-06",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 881620,
+      "outputTokens": 137539,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 33034624,
+      "cachedTokens": 33034624,
+      "freshTokens": 1019159,
+      "totalTokens": 34053783,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-07",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2466997,
+      "outputTokens": 261913,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 54971008,
+      "cachedTokens": 54971008,
+      "freshTokens": 2728910,
+      "totalTokens": 57699918,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-08",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 226475,
+      "outputTokens": 595242,
+      "cacheCreationTokens": 5391160,
+      "cacheReadTokens": 133455993,
+      "cachedTokens": 138847153,
+      "freshTokens": 821717,
+      "totalTokens": 139668870,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-09",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 337618,
+      "outputTokens": 842348,
+      "cacheCreationTokens": 15208961,
+      "cacheReadTokens": 436490619,
+      "cachedTokens": 451699580,
+      "freshTokens": 1179966,
+      "totalTokens": 452879546,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-09",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 367426,
+      "outputTokens": 65252,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 14000256,
+      "cachedTokens": 14000256,
+      "freshTokens": 432678,
+      "totalTokens": 14432934,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-10",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1303964,
+      "outputTokens": 916324,
+      "cacheCreationTokens": 18494880,
+      "cacheReadTokens": 441949373,
+      "cachedTokens": 460444253,
+      "freshTokens": 2220288,
+      "totalTokens": 462664541,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-10",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3411436,
+      "outputTokens": 382656,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 83754240,
+      "cachedTokens": 83754240,
+      "freshTokens": 3794092,
+      "totalTokens": 87548332,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-11",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 690761,
+      "outputTokens": 1479952,
+      "cacheCreationTokens": 20901254,
+      "cacheReadTokens": 552800183,
+      "cachedTokens": 573701437,
+      "freshTokens": 2170713,
+      "totalTokens": 575872150,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-11",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2218430,
+      "outputTokens": 316163,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 41274368,
+      "cachedTokens": 41274368,
+      "freshTokens": 2534593,
+      "totalTokens": 43808961,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-12",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 30424,
+      "outputTokens": 55345,
+      "cacheCreationTokens": 1817084,
+      "cacheReadTokens": 58746801,
+      "cachedTokens": 60563885,
+      "freshTokens": 85769,
+      "totalTokens": 60649654,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-12",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2304396,
+      "outputTokens": 206947,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 87391232,
+      "cachedTokens": 87391232,
+      "freshTokens": 2511343,
+      "totalTokens": 89902575,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-13",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 13758333,
+      "outputTokens": 993122,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 324361472,
+      "cachedTokens": 324361472,
+      "freshTokens": 14751455,
+      "totalTokens": 339112927,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-14",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 6529848,
+      "outputTokens": 484244,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 145569792,
+      "cachedTokens": 145569792,
+      "freshTokens": 7014092,
+      "totalTokens": 152583884,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-15",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 895,
+      "outputTokens": 468082,
+      "cacheCreationTokens": 10835537,
+      "cacheReadTokens": 287727063,
+      "cachedTokens": 298562600,
+      "freshTokens": 468977,
+      "totalTokens": 299031577,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-15",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 359876,
+      "outputTokens": 16394,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1923072,
+      "cachedTokens": 1923072,
+      "freshTokens": 376270,
+      "totalTokens": 2299342,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-16",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 34232,
+      "outputTokens": 1343196,
+      "cacheCreationTokens": 17145384,
+      "cacheReadTokens": 503015123,
+      "cachedTokens": 520160507,
+      "freshTokens": 1377428,
+      "totalTokens": 521537935,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-16",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 5312062,
+      "outputTokens": 418845,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 176482816,
+      "cachedTokens": 176482816,
+      "freshTokens": 5730907,
+      "totalTokens": 182213723,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-17",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 2452,
+      "outputTokens": 986740,
+      "cacheCreationTokens": 17238325,
+      "cacheReadTokens": 640758283,
+      "cachedTokens": 657996608,
+      "freshTokens": 989192,
+      "totalTokens": 658985800,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-17",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 149570,
+      "outputTokens": 10961,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1644032,
+      "cachedTokens": 1644032,
+      "freshTokens": 160531,
+      "totalTokens": 1804563,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-18",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 6229,
+      "outputTokens": 1041344,
+      "cacheCreationTokens": 13787646,
+      "cacheReadTokens": 529103752,
+      "cachedTokens": 542891398,
+      "freshTokens": 1047573,
+      "totalTokens": 543938971,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-18",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 1819058,
+      "outputTokens": 170210,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 34832128,
+      "cachedTokens": 34832128,
+      "freshTokens": 1989268,
+      "totalTokens": 36821396,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-19",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 210,
+      "outputTokens": 105014,
+      "cacheCreationTokens": 1278817,
+      "cacheReadTokens": 71241196,
+      "cachedTokens": 72520013,
+      "freshTokens": 105224,
+      "totalTokens": 72625237,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-19",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2062734,
+      "outputTokens": 185124,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 42286848,
+      "cachedTokens": 42286848,
+      "freshTokens": 2247858,
+      "totalTokens": 44534706,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-21",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 2707965,
+      "outputTokens": 194800,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 69518848,
+      "cachedTokens": 69518848,
+      "freshTokens": 2902765,
+      "totalTokens": 72421613,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-22",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 6289,
+      "outputTokens": 520859,
+      "cacheCreationTokens": 8700006,
+      "cacheReadTokens": 162097011,
+      "cachedTokens": 170797017,
+      "freshTokens": 527148,
+      "totalTokens": 171324165,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-23",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 15024,
+      "outputTokens": 2048629,
+      "cacheCreationTokens": 16031484,
+      "cacheReadTokens": 943811616,
+      "cachedTokens": 959843100,
+      "freshTokens": 2063653,
+      "totalTokens": 961906753,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-24",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 51826,
+      "outputTokens": 2886522,
+      "cacheCreationTokens": 35025951,
+      "cacheReadTokens": 1474743211,
+      "cachedTokens": 1509769162,
+      "freshTokens": 2938348,
+      "totalTokens": 1512707510,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-25",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 61,
+      "outputTokens": 44709,
+      "cacheCreationTokens": 1784936,
+      "cacheReadTokens": 27904171,
+      "cachedTokens": 29689107,
+      "freshTokens": 44770,
+      "totalTokens": 29733877,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-25",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 11642730,
+      "outputTokens": 951589,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 388429312,
+      "cachedTokens": 388429312,
+      "freshTokens": 12594319,
+      "totalTokens": 401023631,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-26",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 12,
+      "outputTokens": 16644,
+      "cacheCreationTokens": 906934,
+      "cacheReadTokens": 4666215,
+      "cachedTokens": 5573149,
+      "freshTokens": 16656,
+      "totalTokens": 5589805,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-27",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 12504733,
+      "outputTokens": 1013890,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 424513536,
+      "cachedTokens": 424513536,
+      "freshTokens": 13518623,
+      "totalTokens": 438032159,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-28",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 14498203,
+      "outputTokens": 1126335,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 491383296,
+      "cachedTokens": 491383296,
+      "freshTokens": 15624538,
+      "totalTokens": 507007834,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-29",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 13613,
+      "outputTokens": 1343766,
+      "cacheCreationTokens": 13114156,
+      "cacheReadTokens": 439622389,
+      "cachedTokens": 452736545,
+      "freshTokens": 1357379,
+      "totalTokens": 454093924,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-29",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 897124,
+      "outputTokens": 39202,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 12355840,
+      "cachedTokens": 12355840,
+      "freshTokens": 936326,
+      "totalTokens": 13292166,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-30",
+      "provider": "claude",
+      "displayName": "Claude Code",
+      "models": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6"
+      ],
+      "inputTokens": 1843,
+      "outputTokens": 895232,
+      "cacheCreationTokens": 6639101,
+      "cacheReadTokens": 397498151,
+      "cachedTokens": 404137252,
+      "freshTokens": 897075,
+      "totalTokens": 405034327,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-31",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 146277,
+      "outputTokens": 10162,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1982464,
+      "cachedTokens": 1982464,
+      "freshTokens": 156439,
+      "totalTokens": 2138903,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-01",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 3126900,
+      "outputTokens": 330686,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 98982400,
+      "cachedTokens": 98982400,
+      "freshTokens": 3457586,
+      "totalTokens": 102439986,
+      "estimatedCostUsd": null
+    }
+  ],
+  "qiraProjects": [
+    {
+      "name": "Qira Main",
+      "category": "Company Surface",
+      "status": "public",
+      "description": "Primary Qira research and product site.",
+      "found": true,
+      "git": {
+        "branch": "main",
+        "commit": "d4958e1",
+        "changedFiles": 0
+      },
+      "stack": [],
+      "scripts": [],
+      "fileCounts": {
+        "json": 11
+      },
+      "lastModified": "2026-07-30T14:02:12.268Z",
+      "scannerWarnings": [
+        "match:scored score:1060 text~imagineqira, text~imagine-qira, text~qira-site, text~qira-main, domain=imagineqira.com, domain=www.imagineqira.com"
+      ],
+      "publicUrl": "https://imagineqira.com"
+    },
+    {
+      "name": "LOLM",
+      "category": "Research",
+      "status": "research",
+      "description": "Latent Order Language Model architecture and validation work.",
+      "found": true,
+      "git": {
+        "branch": "main",
+        "commit": "8b0565c",
+        "changedFiles": 0
+      },
+      "stack": [
+        "Python"
+      ],
+      "scripts": [],
+      "fileCounts": {
+        "docs": 4,
+        "py": 70,
+        "html": 3,
+        "js": 5,
+        "tsx": 17,
+        "ts": 5,
+        "css": 3,
+        "json": 1
+      },
+      "lastModified": "2026-07-10T00:35:59.425Z",
+      "scannerWarnings": [
+        "match:scored score:1115 folder~lolm, text~lolm, folder=lolm-nfet, text~lolm-nfet, text~latent-order, domain=lolm.autohustle.online, python"
+      ]
+    },
+    {
+      "name": "NFET / QEV",
+      "category": "Research",
+      "status": "research",
+      "description": "Verification, encryption, and proof-layer experiments.",
+      "found": true,
+      "git": {
+        "branch": "audit-remediation-2026-07-29",
+        "commit": "9bf33ce",
+        "changedFiles": 3
+      },
+      "stack": [
+        "Python"
+      ],
+      "scripts": [],
+      "fileCounts": {
+        "html": 24,
+        "docs": 16,
+        "py": 39,
+        "json": 13,
+        "js": 19,
+        "css": 4,
+        "tsx": 2,
+        "ts": 3,
+        "rs": 34
+      },
+      "lastModified": "2026-07-31T01:54:36.986Z",
+      "scannerWarnings": [
+        "match:scored score:1645 folder~qev, text~qev, text~nfet, folder=qev-desktop, text~qev-desktop, text~bry-nfet, text~qira-encryption-vault, domain=secure.imagineqira.com"
+      ]
+    },
+    {
+      "name": "My Digital",
+      "category": "Product",
+      "status": "shipping",
+      "description": "QEV-backed digital goods and licensing surface.",
+      "found": true,
+      "git": {
+        "branch": "main",
+        "commit": "e580100",
+        "changedFiles": 7
+      },
+      "stack": [],
+      "scripts": [
+        "dev",
+        "server",
+        "demo",
+        "demo:qev",
+        "db:seed",
+        "db:verify",
+        "build",
+        "typecheck",
+        "test",
+        "lint"
+      ],
+      "fileCounts": {
+        "docs": 14,
+        "json": 29,
+        "ts": 64,
+        "html": 1,
+        "tsx": 35,
+        "css": 1,
+        "sql": 10
+      },
+      "lastModified": "2026-07-27T05:37:38.974Z",
+      "scannerWarnings": [
+        "match:scored score:1160 folder=my-digital, package~my-digital, text~my-digital, text~mydigital, domain=mydigital.imagineqira.com, package.json"
+      ],
+      "publicUrl": "https://mydigital.imagineqira.com"
+    },
+    {
+      "name": "Codey",
+      "category": "Product",
+      "status": "shipping",
+      "description": "Qira builder and agent-product workspace.",
+      "found": true,
+      "git": {
+        "branch": "rescue/codex-autoloop-20260610-195045",
+        "commit": "1fd165d",
+        "changedFiles": 67
+      },
+      "stack": [
+        "TypeScript"
+      ],
+      "scripts": [
+        "vscode:prepublish",
+        "compile",
+        "watch"
+      ],
+      "fileCounts": {
+        "js": 1,
+        "json": 3,
+        "ts": 1
+      },
+      "lastModified": "2026-06-11T20:54:24.126Z",
+      "scannerWarnings": [
+        "match:scored score:1185 package~codey, text~codey, domain=codey.imagineqira.com, domain=codey.autohustle.online, package.json"
+      ],
+      "publicUrl": "https://codey.imagineqira.com"
+    },
+    {
+      "name": "PTI",
+      "category": "Intelligence",
+      "status": "active",
+      "description": "Phoenix traffic intelligence surface.",
+      "found": true,
+      "git": {
+        "branch": "main",
+        "commit": "5e9ce67",
+        "changedFiles": 1
+      },
+      "stack": [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Tailwind"
+      ],
+      "scripts": [
+        "dev",
+        "build",
+        "lint",
+        "preview"
+      ],
+      "fileCounts": {
+        "docs": 1,
+        "js": 1,
+        "html": 3,
+        "json": 5,
+        "tsx": 3,
+        "css": 1,
+        "ts": 1
+      },
+      "lastModified": "2026-06-13T12:12:02.092Z",
+      "scannerWarnings": [
+        "match:scored score:585 text~pti, text~phoenix-traffic, domain=pti.imagineqira.com, package.json, vite"
+      ],
+      "publicUrl": "https://pti.imagineqira.com"
+    },
+    {
+      "name": "Question",
+      "category": "Public Experiment",
+      "status": "active",
+      "description": "Qira question and cognition experiment.",
+      "found": true,
+      "git": {
+        "branch": "master",
+        "commit": "fc25a577a",
+        "changedFiles": 2
+      },
+      "stack": [],
+      "scripts": [],
+      "fileCounts": {
+        "html": 1
+      },
+      "lastModified": "2026-04-08T20:07:22.224Z",
+      "scannerWarnings": [
+        "match:scored score:225 folder~question, text~question"
+      ],
+      "publicUrl": "https://question.imagineqira.com"
+    },
+    {
+      "name": "TOKENS",
+      "category": "Proof Infrastructure",
+      "status": "instrumented",
+      "description": "Public AI-agent usage observatory.",
+      "found": true,
+      "git": {
+        "branch": "main",
+        "commit": "d4958e1",
+        "changedFiles": 0
+      },
+      "stack": [
+        "React",
+        "Vite",
+        "TypeScript"
+      ],
+      "scripts": [
+        "dev",
+        "build",
+        "preview",
+        "typecheck",
+        "join",
+        "collect",
+        "scan:debug",
+        "validate:data",
+        "test",
+        "test:watch",
+        "smoke:noop",
+        "consent",
+        "consent:preview",
+        "consent:export"
+      ],
+      "fileCounts": {
+        "docs": 31,
+        "py": 2,
+        "ts": 104,
+        "json": 29,
+        "js": 22,
+        "html": 4,
+        "css": 2,
+        "tsx": 22
+      },
+      "lastModified": "2026-08-07T02:28:44.273Z",
+      "scannerWarnings": [
+        "match:explicit score:10000 explicit-path, folder=tokens, text~tokens, text~qira-agent-usage-observatory, package~qira-ledger, text~qira-ledger, domain=ledger.imagineqira.com, package.json, vite"
+      ]
+    }
+  ],
+  "scanner": {
+    "rootsChecked": 5,
+    "allowlistedProjects": 8,
+    "foundProjects": 8,
+    "privacyMode": "allowlist_no_paths"
+  },
+  "warnings": [
+    "Codex totals are approximate (~+7% upper bound) due to provider re-emission; see methodology."
+  ],
+  "measurement": {
+    "classes": {
+      "inputTokens": {
+        "measurementClass": "provider_reported",
+        "confidence": "high",
+        "method": "Non-cached input tokens from provider usage accounting in local logs (parsed by ccusage)."
+      },
+      "outputTokens": {
+        "measurementClass": "provider_reported",
+        "confidence": "high",
+        "method": "Generated output tokens from provider usage accounting in local logs (parsed by ccusage)."
+      },
+      "cacheCreationTokens": {
+        "measurementClass": "provider_reported",
+        "confidence": "high",
+        "method": "Cache-write tokens from provider usage accounting in local logs (parsed by ccusage)."
+      },
+      "cacheReadTokens": {
+        "measurementClass": "provider_reported",
+        "confidence": "high",
+        "method": "Cache-read tokens from provider usage accounting in local logs (parsed by ccusage)."
+      },
+      "cachedTokens": {
+        "measurementClass": "collector_derived",
+        "confidence": "high",
+        "method": "Deterministic sum: cacheCreationTokens + cacheReadTokens."
+      },
+      "freshTokens": {
+        "measurementClass": "collector_derived",
+        "confidence": "high",
+        "method": "Deterministic sum: inputTokens + outputTokens."
+      },
+      "totalTokens": {
+        "measurementClass": "collector_derived",
+        "confidence": "high",
+        "method": "Deterministic sum of the four provider-reported token components."
+      },
+      "estimatedCostUsd": {
+        "measurementClass": "tokenizer_estimated",
+        "confidence": "low",
+        "method": "ccusage price-table estimate. Not an authoritative invoice; excluded from exact token totals."
+      },
+      "models": {
+        "measurementClass": "provider_reported",
+        "confidence": "high",
+        "method": "Model identifiers reported by the provider logs."
+      }
+    },
+    "exactTotalTokens": 37880335153,
+    "estimatedOnly": {
+      "costUsd": null,
+      "costMicroUsd": null
+    },
+    "note": "Token counts are provider-reported usage accounting or deterministic sums of them. Cost is an estimate from a price table, not an invoice, and is never added into token totals. Activity volume is not a measure of skill, productivity, or employability."
+  },
+  "privacy": {
+    "rawContentPersisted": false,
+    "allowlistPublication": true,
+    "eligibleForAggregateSync": true,
+    "fieldsPublished": [
+      "totals",
+      "providers",
+      "daily",
+      "qiraProjects",
+      "scanner",
+      "warnings",
+      "measurement",
+      "profile",
+      "integrity",
+      "sourceOfTruth",
+      "providerConfidence",
+      "verification",
+      "claimAuthority",
+      "telemetry"
+    ],
+    "fieldsWithheld": [],
+    "sourcesDisabled": []
+  },
+  "profile": {
+    "identity": {
+      "displayName": "Bryan Leonard",
+      "headline": "Founder, Qira LLC — AI systems, agent tooling, and applied research",
+      "pronouns": null,
+      "location": "Phoenix Metro, Arizona, US",
+      "bio": "Building Qira: local-first AI measurement, verified AI-work identity, and applied agent research. Daily hands-on user of Claude Code and Codex across research and product surfaces.",
+      "availability": "Open to paid AI evaluations, research participation, beta programs, and consulting.",
+      "workCategories": [
+        "AI evaluation",
+        "Agent tooling",
+        "Applied research",
+        "Consulting",
+        "Product engineering"
+      ],
+      "openTo": [
+        "Paid evaluations",
+        "Research studies",
+        "Beta testing",
+        "Contract work",
+        "Consulting",
+        "Expert interviews"
+      ],
+      "links": [
+        {
+          "label": "Qira",
+          "url": "https://imagineqira.com"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/TheArtOfSound"
+        }
+      ],
+      "identityProofs": [
+        {
+          "type": "github",
+          "handle": "TheArtOfSound",
+          "gistId": "5801ea9971a85f3de6001f17be35cbfe"
+        }
+      ],
+      "avatarUrl": null,
+      "contact": {
+        "label": "Invite to an opportunity",
+        "href": "mailto:bryanleonard237@gmail.com?subject=Opportunity%20via%20TOKENS%20profile"
+      }
+    },
+    "activity": {
+      "referenceDate": "2026-08-06",
+      "activeDays": 104,
+      "firstActiveDate": "2026-02-26",
+      "lastActiveDate": "2026-08-01",
+      "spanDays": 157,
+      "activeDaysLast30": 24,
+      "activeDaysLast90": 72,
+      "currentStreakDays": 0,
+      "longestStreakDays": 26,
+      "toolsUsed": [
+        "Codex",
+        "Claude Code"
+      ],
+      "modelsUsed": [
+        "claude-fable-5",
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-6",
+        "claude-opus-4-7",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-4-6",
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "projectsActive": 8
+    },
+    "work": {
+      "artifacts": [
+        {
+          "type": "repository",
+          "title": "TheArtOfSound/TOKENS",
+          "description": "Open-source local-first collector, canonical snapshot schema, and privacy pipeline for measured AI work.",
+          "url": "https://github.com/TheArtOfSound/TOKENS",
+          "period": "2026",
+          "linkedProject": "TOKENS",
+          "verification": "collector_observed",
+          "basis": "The local collector independently observed git/file activity for this project."
+        },
+        {
+          "type": "deployment",
+          "title": "TOKENS — verified AI-work ledger",
+          "description": "Public, sanitized activity surface generated by the local collector and deployed as a static site.",
+          "url": "https://ledger.imagineqira.com",
+          "period": "2026",
+          "linkedProject": "TOKENS",
+          "verification": "collector_observed",
+          "basis": "The local collector independently observed git/file activity for this project."
+        },
+        {
+          "type": "deployment",
+          "title": "Qira",
+          "description": "Primary Qira research and product site.",
+          "url": "https://imagineqira.com",
+          "period": "2026",
+          "linkedProject": "Qira Main",
+          "verification": "collector_observed",
+          "basis": "The local collector independently observed git/file activity for this project."
+        },
+        {
+          "type": "deployment",
+          "title": "Codey",
+          "description": "Qira builder and agent-product workspace.",
+          "url": "https://codey.imagineqira.com",
+          "period": "2026",
+          "linkedProject": "Codey",
+          "verification": "collector_observed",
+          "basis": "The local collector independently observed git/file activity for this project."
+        },
+        {
+          "type": "deployment",
+          "title": "My Digital",
+          "description": "QEV-backed digital goods and licensing surface.",
+          "url": "https://mydigital.imagineqira.com",
+          "period": "2026",
+          "linkedProject": "My Digital",
+          "verification": "collector_observed",
+          "basis": "The local collector independently observed git/file activity for this project."
+        },
+        {
+          "type": "research",
+          "title": "LOLM — Latent Order Language Model",
+          "description": "Architecture and validation work on latent-order language modeling.",
+          "url": null,
+          "period": "2026",
+          "linkedProject": "LOLM",
+          "verification": "collector_observed",
+          "basis": "The local collector independently observed git/file activity for this project."
+        },
+        {
+          "type": "research",
+          "title": "NFET / QEV",
+          "description": "Verification, encryption, and proof-layer experiments.",
+          "url": null,
+          "period": "2026",
+          "linkedProject": "NFET / QEV",
+          "verification": "collector_observed",
+          "basis": "The local collector independently observed git/file activity for this project."
+        }
+      ],
+      "outcomes": [],
+      "collectorObserved": 7,
+      "totalArtifacts": 7,
+      "totalOutcomes": 0
+    },
+    "opportunity": {
+      "engagementTypes": [
+        "Paid evaluations",
+        "Research studies",
+        "Beta testing",
+        "Contract",
+        "Consulting",
+        "Expert interviews"
+      ],
+      "compensation": "From $150/hr · project rates negotiable",
+      "typicalProjectSize": "A few hours to multi-week engagements",
+      "workArrangement": "Remote",
+      "timezone": "America/Phoenix (UTC−7), no DST",
+      "responseTime": "Usually replies within 2 business days",
+      "computeCostRange": "Efficiency-minded; heavy cache reuse keeps per-task compute low",
+      "note": "Availability, engagement, and compensation are set by the member. They are self-declared preferences, not verified terms."
+    },
+    "efficiency": {
+      "cachedSharePct": 98.9,
+      "freshSharePct": 1.1,
+      "outputSharePct": 23,
+      "avgTokensPerActiveDay": 364233992,
+      "note": "Efficiency signals, not a ranking. Producing the same verified result with fewer tokens is better. Cache reuse is the measured proxy for context-injection efficiency (reusing context instead of resending it). Cost per outcome requires connected outcomes, which remain a separate evidence class."
+    },
+    "practice": {
+      "tokenEfficiencyArchitecture": [
+        "Cache-first context reuse (measured cache share on this profile)",
+        "Skill and instruction layering over full-prompt rewrites",
+        "Local-first collection so raw prompts never leave the machine",
+        "Signed, allowlisted publication instead of raw log dumps"
+      ],
+      "contextInjectionSystems": [
+        "Project CLAUDE.md / AGENTS.md instruction files",
+        "Grok and Claude skills (SKILL.md) for repeatable workflows",
+        "MCP / tool bindings for scoped capability access",
+        "Collector consent + per-field publication toggles",
+        "Event ledger with HMAC session pseudonyms (no raw session ids)"
+      ],
+      "problemFocus": [
+        "Evidence that someone actually operates AI agents deeply",
+        "Privacy-preserving measurement of AI-assisted work",
+        "Claim-bounded verification (no universal AI score)",
+        "Agent failure diagnosis via hierarchical telemetry summaries",
+        "Local-first tooling for Claude Code and Codex"
+      ],
+      "leveragePatterns": [
+        "Multi-tool orchestration across Claude Code and Codex on the same problems",
+        "Collector → signed snapshot → public evidence loop",
+        "Work artifacts linked to collector-observed local projects",
+        "Evidence classes kept separate: activity, work, identity, outcomes",
+        "Buyer-facing terms stated explicitly (compensation, compute profile) instead of inferred from tokens"
+      ],
+      "operatingCostNote": "Compute kept low via heavy cache reuse; cost is never inferred from raw token volume as a quality signal.",
+      "valueDeliveredNote": "Shipped open-source collector, live signed ledger, and claim-authority surface employers can re-verify in-browser.",
+      "verification": "self_reported",
+      "note": "Token-efficiency architecture, context-injection systems, problem focus, and leverage patterns are declared by the member. They are not observed by the collector. Measured efficiency (cache reuse, output share) is a separate evidence class above."
+    },
+    "verification": [
+      {
+        "label": "Device-signed",
+        "status": "verified",
+        "basis": "The published snapshot was signed by a key held on this device and has not changed since. This proves integrity, not identity, and not that the source logs were genuine."
+      },
+      {
+        "label": "Collector-observed",
+        "status": "verified",
+        "basis": "AI activity was read from the provider's own usage accounting in local logs on this device (104 active days; 8 project(s) seen locally). This is device-local observation, not independent confirmation."
+      },
+      {
+        "label": "Identity-linked",
+        "status": "reported",
+        "basis": "The member published a key-signed proof under an external account; your browser verifies it live (see the identity badge above). This proves control of that account, not legal identity."
+      },
+      {
+        "label": "Provider-attested",
+        "status": "pending",
+        "basis": "No provider has independently confirmed this usage (no OAuth usage API, billing export, or enterprise attestation is connected yet). This is a stronger tier when available."
+      },
+      {
+        "label": "Benchmark-assessed",
+        "status": "pending",
+        "basis": "No practical, reproducible assessment has been completed and attached to this profile."
+      },
+      {
+        "label": "Third-party-confirmed",
+        "status": "pending",
+        "basis": "No client, employer, repository owner, or research organization has confirmed an outcome. 7 artifact(s) are collector-observed, which shows local activity but not authorship, quality, or results."
+      },
+      {
+        "label": "Self-submitted",
+        "status": "self_submitted",
+        "basis": "Identity, headline, links, work artifacts, and any outcomes were entered by the member and are not independently verified."
+      }
+    ],
+    "note": "Identity fields are self-submitted and unverified. Activity is derived from measured, provider-reported usage. Activity volume is evidence of practice, not a measure of skill, seniority, or employability."
+  },
+  "integrity": {
+    "checks": [
+      {
+        "name": "No future-dated activity",
+        "status": "ok",
+        "detail": "All activity is dated on or before the snapshot date."
+      },
+      {
+        "name": "Plausible daily volume",
+        "status": "ok",
+        "detail": "No day exceeds the implausible-volume threshold."
+      },
+      {
+        "name": "Well-formed totals",
+        "status": "ok",
+        "detail": "All totals are finite and non-negative."
+      },
+      {
+        "name": "No duplicate day-rows",
+        "status": "ok",
+        "detail": "Each (date, provider) appears once."
+      },
+      {
+        "name": "Recognized model families",
+        "status": "ok",
+        "detail": "All model names match known provider families."
+      },
+      {
+        "name": "No large retroactive backfill",
+        "status": "ok",
+        "detail": "No unusual retroactive changes versus the last snapshot."
+      }
+    ],
+    "flags": 0,
+    "note": "All automated integrity checks passed. These detect statistical tells, not fraud, and a passing result does not prove the source logs were genuine."
+  },
+  "sourceOfTruth": "event_ledger",
+  "providerConfidence": {
+    "claude": {
+      "confidence": "high",
+      "note": "Event-level, deduplicated by provider message id. Reconciles to within 0.05% of ccusage across all measured days."
+    },
+    "codex": {
+      "confidence": "medium",
+      "note": "Event-level. Codex re-emits a turn’s usage without advancing its cumulative counter in roughly 15% of sessions, so totals may overstate by up to ~7%. Treated as approximate."
+    }
+  },
+  "verification": {
+    "schemaVersion": "2.0.0",
+    "canonicalSchemaVersion": "2.0.0",
+    "snapshotSha256": "d14f8b5c30d1807543beb6cab3ae810b9bcc203035742c9c88583483c90899ee",
+    "rawLogsPublished": false,
+    "gitCommit": null,
+    "proves": "The hash proves the published snapshot was not altered after generation. It does not prove the private source logs were immutable, only that this public file is intact."
+  },
+  "claimAuthority": {
+    "model": "signal → provenance → allowed claim → confidence → limitations",
+    "combinedAuthorityRule": "A combined figure never inherits more authority than its weakest supporting evidence. No universal skill, quality, or employability score is published.",
+    "universalNonClaims": [
+      "identity",
+      "authorship",
+      "permission",
+      "expertise",
+      "quality",
+      "outcome"
+    ],
+    "tierOrder": [
+      "self_submitted",
+      "collector_observed",
+      "device_signed",
+      "provider_attested",
+      "benchmark_assessed",
+      "third_party_confirmed"
+    ],
+    "signals": [
+      {
+        "signalType": "collector_observed_activity",
+        "provenance": "local_provider_usage_record",
+        "tier": "collector_observed",
+        "allowedClaims": [
+          "activity_occurred"
+        ],
+        "excludedClaims": [
+          "identity",
+          "authorship",
+          "expertise",
+          "quality",
+          "productivity",
+          "permission",
+          "outcome",
+          "compensation_fit"
+        ],
+        "confidence": "high",
+        "limitations": [
+          "locally controlled source",
+          "does not establish work quality"
+        ],
+        "badgeLabel": "Collector-observed activity",
+        "present": true,
+        "explains": "A compatible local usage record was observed. Not expertise or productivity."
+      },
+      {
+        "signalType": "provider_reported_token_counts",
+        "provenance": "local_claude_or_codex_accounting",
+        "tier": "provider_attested",
+        "allowedClaims": [
+          "activity_occurred"
+        ],
+        "excludedClaims": [
+          "identity",
+          "authorship",
+          "expertise",
+          "quality",
+          "productivity",
+          "permission",
+          "outcome",
+          "compensation_fit"
+        ],
+        "confidence": "medium",
+        "limitations": [
+          "provider accounting, not an invoice",
+          "locally controlled source files"
+        ],
+        "badgeLabel": "Provider-reported usage",
+        "present": true,
+        "explains": "Token counts come from provider usage accounting — evidence of activity, not skill."
+      },
+      {
+        "signalType": "device_signed_snapshot",
+        "provenance": "ed25519_device_key",
+        "tier": "device_signed",
+        "allowedClaims": [
+          "snapshot_integrity",
+          "device_key_possession"
+        ],
+        "excludedClaims": [
+          "identity",
+          "authorship",
+          "expertise",
+          "quality",
+          "productivity",
+          "permission",
+          "outcome",
+          "activity_occurred"
+        ],
+        "confidence": "high",
+        "limitations": [
+          "does not prove source logs were honest or unmodified",
+          "does not prove legal identity of the key holder"
+        ],
+        "badgeLabel": "Device-signed activity record",
+        "present": true,
+        "explains": "Signature confirms integrity and signing key. It does not independently prove identity, authorship, skill, source honesty, permission, or outcomes."
+      },
+      {
+        "signalType": "collector_observed_work_artifact",
+        "provenance": "local_allowlisted_project_scan",
+        "tier": "collector_observed",
+        "allowedClaims": [
+          "activity_occurred"
+        ],
+        "excludedClaims": [
+          "identity",
+          "authorship",
+          "expertise",
+          "quality",
+          "productivity",
+          "permission",
+          "outcome",
+          "compensation_fit",
+          "authorship"
+        ],
+        "confidence": "medium",
+        "limitations": [
+          "local presence of a linked project",
+          "not sole authorship"
+        ],
+        "badgeLabel": "Collector-observed work",
+        "present": true,
+        "explains": "Local collector found a linked project. Not identity, quality, or sole authorship."
+      },
+      {
+        "signalType": "link_provided_work",
+        "provenance": "member_supplied_https_url",
+        "tier": "self_submitted",
+        "allowedClaims": [],
+        "excludedClaims": [
+          "identity",
+          "authorship",
+          "expertise",
+          "quality",
+          "productivity",
+          "permission",
+          "outcome",
+          "compensation_fit",
+          "authorship"
+        ],
+        "confidence": "low",
+        "limitations": [
+          "URL provided by member",
+          "not independently verified"
+        ],
+        "badgeLabel": "Link provided",
+        "present": false,
+        "explains": "Public link provided by the member. Not independently verified."
+      },
+      {
+        "signalType": "self_reported_outcome",
+        "provenance": "profile_work_json",
+        "tier": "self_submitted",
+        "allowedClaims": [],
+        "excludedClaims": [
+          "identity",
+          "authorship",
+          "permission",
+          "expertise",
+          "quality",
+          "outcome"
+        ],
+        "confidence": "low",
+        "limitations": [
+          "requires third-party confirmation to upgrade"
+        ],
+        "badgeLabel": "Self-reported outcome",
+        "present": false,
+        "explains": "Stated by the member. Outcome verification requires third-party confirmation."
+      },
+      {
+        "signalType": "self_submitted_identity",
+        "provenance": "profile_json",
+        "tier": "self_submitted",
+        "allowedClaims": [],
+        "excludedClaims": [
+          "identity",
+          "authorship",
+          "expertise",
+          "outcome"
+        ],
+        "confidence": "low",
+        "limitations": [
+          "user-authored fields",
+          "not independently verified"
+        ],
+        "badgeLabel": "Self-submitted identity",
+        "present": true,
+        "explains": "Display name and bio are self-submitted. Not identity verification."
+      },
+      {
+        "signalType": "external_account_proof",
+        "provenance": "browser_checked_github_gist",
+        "tier": "self_submitted",
+        "allowedClaims": [
+          "account_control"
+        ],
+        "excludedClaims": [
+          "identity",
+          "expertise",
+          "authorship",
+          "outcome"
+        ],
+        "confidence": "high",
+        "limitations": [
+          "proves control of a linked account, not legal identity"
+        ],
+        "badgeLabel": "Account control (linked)",
+        "present": true,
+        "explains": "Browser-checked control of a linked account. Not legal identity."
+      },
+      {
+        "signalType": "benchmark_assessed",
+        "provenance": "defined_task_conditions",
+        "tier": "benchmark_assessed",
+        "allowedClaims": [],
+        "excludedClaims": [
+          "identity",
+          "authorship",
+          "permission",
+          "expertise",
+          "quality",
+          "outcome",
+          "expertise"
+        ],
+        "confidence": "medium",
+        "limitations": [
+          "bounded to the defined task only"
+        ],
+        "badgeLabel": "Benchmark-assessed",
+        "present": false,
+        "explains": "Not present in this snapshot. When present, only claims performance on that defined task."
+      },
+      {
+        "signalType": "third_party_confirmed_outcome",
+        "provenance": "named_party_confirmation",
+        "tier": "third_party_confirmed",
+        "allowedClaims": [
+          "outcome"
+        ],
+        "excludedClaims": [
+          "identity",
+          "expertise",
+          "authorship"
+        ],
+        "confidence": "medium",
+        "limitations": [
+          "does not prove independent causation"
+        ],
+        "badgeLabel": "Third-party confirmed",
+        "present": false,
+        "explains": "Not present in this snapshot. When present, a named party confirmed an outcome — not causation or identity."
+      }
+    ],
+    "note": "Token volume is evidence of activity, not expertise, productivity, efficiency, or professional value. A valid device signature proves integrity of published bytes and key possession — not source honesty or legal identity."
+  },
+  "telemetry": {
+    "measurementClass": "collector_derived",
+    "confidence": "medium",
+    "totalEvents": 152155,
+    "hierarchy": [
+      {
+        "provider": "codex",
+        "events": 84024,
+        "sessions": 0,
+        "totalTokens": 11380504483,
+        "models": [
+          {
+            "model": "gpt-5.5",
+            "events": 32270,
+            "sessions": 0,
+            "totalTokens": 4674922657
+          },
+          {
+            "model": "gpt-5.3-codex",
+            "events": 17421,
+            "sessions": 0,
+            "totalTokens": 2068531929
+          },
+          {
+            "model": "gpt-5.6-sol",
+            "events": 16635,
+            "sessions": 0,
+            "totalTokens": 2236077362
+          },
+          {
+            "model": "gpt-5.4",
+            "events": 15953,
+            "sessions": 0,
+            "totalTokens": 2142532590
+          },
+          {
+            "model": "(unattributed)",
+            "events": 1488,
+            "sessions": 0,
+            "totalTokens": 232679376
+          },
+          {
+            "model": "gpt-5.4-mini",
+            "events": 221,
+            "sessions": 0,
+            "totalTokens": 23923103
+          },
+          {
+            "model": "gpt-5.6-luna",
+            "events": 22,
+            "sessions": 0,
+            "totalTokens": 909042
+          },
+          {
+            "model": "gpt-5.6-terra",
+            "events": 14,
+            "sessions": 0,
+            "totalTokens": 928424
+          }
+        ]
+      },
+      {
+        "provider": "claude",
+        "events": 68131,
+        "sessions": 45,
+        "totalTokens": 26499830670,
+        "models": [
+          {
+            "model": "claude-opus-4-8",
+            "events": 38108,
+            "sessions": 37,
+            "totalTokens": 16194639978
+          },
+          {
+            "model": "claude-opus-4-7",
+            "events": 12742,
+            "sessions": 5,
+            "totalTokens": 6079361866
+          },
+          {
+            "model": "claude-fable-5",
+            "events": 5900,
+            "sessions": 18,
+            "totalTokens": 2104166417
+          },
+          {
+            "model": "claude-sonnet-4-6",
+            "events": 5488,
+            "sessions": 2,
+            "totalTokens": 187896657
+          },
+          {
+            "model": "claude-opus-5",
+            "events": 3710,
+            "sessions": 8,
+            "totalTokens": 1171034228
+          },
+          {
+            "model": "claude-opus-4-6",
+            "events": 1396,
+            "sessions": 1,
+            "totalTokens": 722981156
+          },
+          {
+            "model": "claude-haiku-4-5-20251001",
+            "events": 787,
+            "sessions": 7,
+            "totalTokens": 39750368
+          }
+        ]
+      }
+    ],
+    "sessions": {
+      "distinctSessions": 45,
+      "eventsWithoutSession": 84024,
+      "medianEventsPerSession": 464,
+      "p95EventsPerSession": 4776,
+      "maxEventsPerSession": 14840,
+      "medianInterEventSeconds": 10
+    },
+    "note": "Agent-operation telemetry derived from local provider usage events. Counts and timing only — no prompts, responses, tool arguments, paths, or raw session ids. Session identity is an on-device HMAC pseudonym and is not published.",
+    "limitations": [
+      "Provider usage logs do not currently expose full tool-call trees (caller → agent → tools) with payloads.",
+      "Timing is inter-event gaps from usage timestamps, not end-to-end wall-clock traces of tool latency.",
+      "Session pseudonyms are device-local HMACs; they never leave this machine and are not in the public snapshot.",
+      "Codex event-level totals may overstate relative to ccusage aggregates; see EVENT_LEDGER docs."
+    ],
+    "doesNotEstablish": [
+      "expertise",
+      "quality_of_reasoning",
+      "that_high_event_volume_means_skill",
+      "full_tool_call_fidelity",
+      "legal_identity"
+    ]
+  },
+  "signature": {
+    "signatureVersion": "1.0.0",
+    "algorithm": "ed25519",
+    "publicKey": "MCowBQYDK2VwAyEACtM+NkNEKJfV8ABWUexYi/JwTYyoPn3gaZ+wAMvd/UA=",
+    "keyId": "defe470fe73a66c6",
+    "issuedAt": "2026-08-07T02:28:52.666Z",
+    "nonce": "054fe1f4968613545ccd58a4040b9418",
+    "scope": "published_snapshot",
+    "canonicalizationSpec": "RFC8785-subset; see docs/architecture/CANONICALIZATION.md",
+    "payloadSha256": "3506121134df8513d4fdca5363592b1f5e7ac9fb6df7dcc9b9d9915322694f45",
+    "signature": "359dCleLMdQtP22Jh8iGrJ57b00tcSpvL0fLYThW5PFZif1Oawuxq6hOznJhLu0FUC3jtH/pnSiiT5ekGbPnDA==",
+    "proves": "This snapshot was produced by a collector holding this device key and has not been altered since signing.",
+    "doesNotProve": [
+      "It does not prove the provider source logs were genuine or unmodified.",
+      "It does not prove the human identity behind this device key.",
+      "It is a device attestation, not a third-party audit."
+    ]
+  }
+}
