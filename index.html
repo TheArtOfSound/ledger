@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- qira-deploy-stamp:20260807T023105Z -->
+<!-- qira-deploy-stamp:20260807Tmobile-nav -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -46,83 +46,180 @@
   
     <style id="qira-apps-nav">
       /*
-        Ledger SPA owns the topbar; inject launcher as last header control
-        after React mounts (see script below). Fallback fixed top-right
-        only until the header exists.
+        Ledger SPA owns the topbar. Inject launcher beside the hamburger
+        (not after the mobile drawer). Avoid fixed mega-z overlay on mobile.
       */
       #qira-apps-chrome {
         position: fixed;
         top: max(10px, env(safe-area-inset-top, 0px));
-        right: max(12px, env(safe-area-inset-right, 0px));
-        z-index: 2147483000;
+        right: max(56px, env(safe-area-inset-right, 0px));
+        z-index: 40;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 2px;
+        pointer-events: auto;
       }
       #qira-apps-chrome.is-in-header {
-        position: static;
-        top: auto;
-        right: auto;
-        z-index: auto;
-        margin-left: 8px;
+        position: static !important;
+        top: auto !important;
+        right: auto !important;
+        z-index: auto !important;
+        margin: 0 !important;
         flex-shrink: 0;
       }
-      .topbar #qira-apps-chrome,
-      header.topbar #qira-apps-chrome,
       .topbar .qira-apps-slot {
         display: inline-flex;
         align-items: center;
+        flex-shrink: 0;
+        order: 9;
+        margin-left: 4px;
+        margin-right: 2px;
+      }
+      .topbar #qira-apps-chrome,
+      header.topbar #qira-apps-chrome {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      /* ── Mobile topbar: single row brand · · · apps | ☰ ── */
+      @media (max-width: 900px) {
+        .topbar {
+          display: flex !important;
+          flex-wrap: nowrap !important;
+          align-items: center !important;
+          justify-content: flex-start !important;
+          gap: 8px !important;
+          min-height: 56px !important;
+          height: 56px !important;
+          padding: 0 !important;
+          width: min(100% - 20px, 1220px) !important;
+          overflow: visible !important;
+          position: sticky !important;
+          top: 0 !important;
+          z-index: 60 !important;
+          box-sizing: border-box !important;
+        }
+        .topbar .brand {
+          flex: 0 1 auto !important;
+          min-width: 0 !important;
+          z-index: 62;
+          position: relative;
+        }
+        .topbar .brand span {
+          font-size: 0.95rem !important;
+          letter-spacing: 0.14em !important;
+        }
+        .topbar .topsearch,
+        .topbar .desktop-nav {
+          display: none !important;
+        }
+        /* Push controls to the right as a group */
+        .topbar .qira-apps-slot {
+          order: 9 !important;
+          margin-left: auto !important;
+          margin-right: 6px !important;
+        }
+        .topbar .menu-toggle {
+          display: inline-flex !important;
+          order: 10 !important;
+          margin-left: 0 !important;
+          flex-shrink: 0 !important;
+          z-index: 62;
+          position: relative;
+        }
+        /* Drawer + scrim above the bar; never leave a half-open sheet */
+        .topbar .menu-backdrop {
+          z-index: 70 !important;
+        }
+        .topbar .mobile-nav {
+          z-index: 75 !important;
+          width: min(300px, 86vw) !important;
+          padding-top: max(72px, calc(56px + env(safe-area-inset-top, 0px))) !important;
+        }
+        .topbar:not(.is-menu-open) .mobile-nav {
+          display: none !important;
+          transform: translateX(110%) !important;
+          pointer-events: none !important;
+          visibility: hidden !important;
+        }
+        .topbar:not(.is-menu-open) .menu-backdrop {
+          display: none !important;
+          pointer-events: none !important;
+        }
+        .topbar.is-menu-open .mobile-nav {
+          display: flex !important;
+          transform: translateX(0) !important;
+          pointer-events: auto !important;
+          visibility: visible !important;
+        }
+        .topbar.is-menu-open .menu-backdrop {
+          display: block !important;
+        }
+        /* Brief pre-mount fallback: sit left of hamburger, don't cover it */
+        #qira-apps-chrome:not(.is-in-header) {
+          top: max(8px, env(safe-area-inset-top, 0px));
+          right: max(58px, env(safe-area-inset-right, 0px));
+          z-index: 55;
+        }
       }
     </style>
-    <script src="/assets/qira-apps/qira-product-launcher.js?v=20260807nav" defer></script>
+    <script src="/assets/qira-apps/qira-product-launcher.js?v=20260807mobile" defer></script>
 
   </head>
   <body>
     
     <div id="qira-apps-chrome" aria-label="Qira Apps">
-      <qira-product-launcher current-product="ledger" theme="dark"></qira-product-launcher>
+      <qira-product-launcher current-product="ledger" theme="light"></qira-product-launcher>
     </div>
 
     <div id="root"></div>
     <script>
-      /* Move launcher into Ledger header as last control when present */
+      /* Place launcher beside hamburger (before .menu-toggle), never after the drawer */
       (function () {
         function place() {
           var chrome = document.getElementById('qira-apps-chrome');
           if (!chrome) return;
           var header =
             document.querySelector('header.topbar') ||
-            document.querySelector('.topbar') ||
-            document.querySelector('header');
+            document.querySelector('.topbar');
           if (!header) return;
           var slot = header.querySelector('.qira-apps-slot');
           if (!slot) {
             slot = document.createElement('div');
             slot.className = 'qira-apps-slot';
             slot.setAttribute('aria-label', 'Qira Apps');
-            header.appendChild(slot);
+          }
+          var toggle = header.querySelector('.menu-toggle');
+          if (slot.parentNode !== header || (toggle && slot.nextElementSibling !== toggle)) {
+            if (toggle) header.insertBefore(slot, toggle);
+            else header.appendChild(slot);
           }
           if (chrome.parentNode !== slot) {
             slot.appendChild(chrome);
-            chrome.classList.add('is-in-header');
           }
+          chrome.classList.add('is-in-header');
         }
         var tries = 0;
         var id = setInterval(function () {
           place();
           tries += 1;
-          if (document.querySelector('header.topbar, .topbar') || tries > 40) {
+          if (document.querySelector('header.topbar') || tries > 60) {
             place();
-            if (tries > 40) clearInterval(id);
-            if (document.querySelector('header.topbar, .topbar')) clearInterval(id);
+            if (tries > 60 || document.querySelector('header.topbar .menu-toggle')) clearInterval(id);
           }
-        }, 100);
+        }, 80);
         if (document.readyState === 'loading') {
           document.addEventListener('DOMContentLoaded', place);
         } else {
           place();
         }
+        // Re-place after SPA re-renders the header
+        try {
+          var mo = new MutationObserver(function () { place(); });
+          mo.observe(document.documentElement, { childList: true, subtree: true });
+          setTimeout(function () { mo.disconnect(); }, 8000);
+        } catch (e) {}
       })();
     </script>
     <!--

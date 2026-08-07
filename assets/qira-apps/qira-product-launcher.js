@@ -96,8 +96,11 @@
       this._open = false;
       this._root = this.attachShadow({ mode: "open" });
       this._products = null;
+      this._portalHost = null;
+      this._panelId = "qira-apps-panel-" + Math.random().toString(36).slice(2, 9);
       this._onDoc = this._onDoc.bind(this);
       this._onKey = this._onKey.bind(this);
+      this._onReposition = this._onReposition.bind(this);
     }
 
     static get observedAttributes() {
@@ -117,7 +120,11 @@
     disconnectedCallback() {
       document.removeEventListener("mousedown", this._onDoc);
       document.removeEventListener("keydown", this._onKey);
+      window.removeEventListener("resize", this._onReposition);
+      window.removeEventListener("scroll", this._onReposition, true);
       document.body.style.overflow = this._prevOverflow || "";
+      this._hideTip();
+      this._unmountPortal();
     }
 
     attributeChangedCallback() {
@@ -131,28 +138,12 @@
 
     _render() {
       var theme = resolveTheme(this.getAttribute("theme") || "auto");
-      var current = this.currentProduct;
-      var products = this._products || [];
-      var panelId = "qira-apps-panel-" + Math.random().toString(36).slice(2, 9);
       var html = "";
       html += "<style>" + STYLES + "</style>";
       html += '<div class="qira-launcher" data-theme="' + theme + '" data-qira-launcher="">';
       html += '<button type="button" class="qira-launcher__trigger" aria-label="Open Qira Apps" aria-expanded="' +
-        (this._open ? "true" : "false") + '" aria-controls="' + panelId + '" aria-haspopup="dialog" part="trigger">' +
+        (this._open ? "true" : "false") + '" aria-controls="' + this._panelId + '" aria-haspopup="dialog" part="trigger">' +
         gridIcon() + "</button>";
-      if (this._open) {
-        html += '<button type="button" class="qira-launcher__scrim" aria-label="Close Qira Apps" tabindex="-1" data-close></button>';
-        html += '<div id="' + panelId + '" class="qira-launcher__panel" role="dialog" aria-modal="true" aria-label="Qira Apps" data-qira-panel part="panel">';
-        html += '<div class="qira-launcher__header"><h2 class="qira-launcher__title">Qira Apps</h2>';
-        html += '<button type="button" class="qira-launcher__close" aria-label="Close Qira Apps" data-close>';
-        html += '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>';
-        html += "</button></div>";
-        html += '<div class="qira-launcher__grid" data-qira-grid="">';
-        for (var i = 0; i < products.length; i++) {
-          html += this._tile(products[i], current);
-        }
-        html += "</div></div>";
-      }
       html += "</div>";
       this._root.innerHTML = html;
       var self = this;
@@ -163,10 +154,62 @@
           self._toggle();
         });
       }
-      this._root.querySelectorAll("[data-close]").forEach(function (el) {
+      if (this._open) this._mountPortal();
+      else this._unmountPortal();
+    }
+
+    _panelMarkup(theme, current, products) {
+      var html = "";
+      html += "<style>" + STYLES + "</style>";
+      html += '<div class="qira-launcher qira-launcher--portal" data-theme="' + theme + '" data-open="true" data-qira-launcher="">';
+      html += '<button type="button" class="qira-launcher__scrim" aria-label="Close Qira Apps" tabindex="-1" data-close></button>';
+      html += '<div id="' + this._panelId + '" class="qira-launcher__panel" role="dialog" aria-modal="true" aria-label="Qira Apps" data-qira-panel part="panel">';
+      html += '<div class="qira-launcher__header"><h2 class="qira-launcher__title">Qira Apps</h2>';
+      html += '<button type="button" class="qira-launcher__close" aria-label="Close Qira Apps" data-close>';
+      html += '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>';
+      html += "</button></div>";
+      html += '<div class="qira-launcher__grid" data-qira-grid="">';
+      for (var i = 0; i < products.length; i++) {
+        html += this._tile(products[i], current);
+      }
+      html += "</div></div></div>";
+      return html;
+    }
+
+    _mountPortal() {
+      this._unmountPortal();
+      var theme = resolveTheme(this.getAttribute("theme") || "auto");
+      var current = this.currentProduct;
+      var products = this._products || [];
+      var host = document.createElement("div");
+      host.setAttribute("data-qira-apps-portal", "");
+      // Fixed full-viewport host escapes sticky / backdrop-filter containing blocks in nav bars
+      host.style.cssText = "position:fixed;inset:0;width:100%;height:100%;z-index:2147483000;pointer-events:none;";
+      var shadow = host.attachShadow({ mode: "open" });
+      shadow.innerHTML = this._panelMarkup(theme, current, products);
+      document.body.appendChild(host);
+      this._portalHost = host;
+      this._wirePortal(shadow, current);
+      this._positionPortalPanel();
+      window.addEventListener("resize", this._onReposition);
+      window.addEventListener("scroll", this._onReposition, true);
+    }
+
+    _unmountPortal() {
+      window.removeEventListener("resize", this._onReposition);
+      window.removeEventListener("scroll", this._onReposition, true);
+      if (this._portalHost && this._portalHost.parentNode) {
+        this._portalHost.parentNode.removeChild(this._portalHost);
+      }
+      this._portalHost = null;
+    }
+
+    _wirePortal(shadow, current) {
+      var self = this;
+      shadow.querySelectorAll("[data-close]").forEach(function (el) {
         el.addEventListener("click", function () { self._close(); });
       });
-      this._root.querySelectorAll("[data-product-id]").forEach(function (el) {
+      shadow.querySelectorAll("[data-product-id]").forEach(function (el) {
         el.addEventListener("click", function (ev) {
           if (el.getAttribute("data-disabled") === "true") {
             ev.preventDefault();
@@ -179,7 +222,6 @@
             deviceClass: deviceClass(),
           });
         });
-        // tooltip
         var tip = el.getAttribute("data-tooltip");
         if (tip) {
           el.addEventListener("mouseenter", function () { self._showTip(el, tip); });
@@ -188,6 +230,43 @@
           el.addEventListener("blur", function () { self._hideTip(); });
         }
       });
+    }
+
+    _positionPortalPanel() {
+      if (!this._portalHost || !this._portalHost.shadowRoot) return;
+      var panel = this._portalHost.shadowRoot.querySelector(".qira-launcher__panel");
+      if (!panel) return;
+      var mobile = false;
+      try { mobile = window.matchMedia("(max-width:640px)").matches; } catch (e) {}
+      if (mobile) {
+        panel.style.position = "fixed";
+        panel.style.left = "0.75rem";
+        panel.style.right = "0.75rem";
+        panel.style.top = "auto";
+        panel.style.bottom = "max(0.75rem, env(safe-area-inset-bottom, 0px))";
+        panel.style.width = "auto";
+        panel.style.maxWidth = "none";
+        panel.style.pointerEvents = "auto";
+        return;
+      }
+      var trigger = this._root.querySelector(".qira-launcher__trigger") || this;
+      var r = trigger.getBoundingClientRect();
+      var width = Math.min(window.innerWidth - 24, 20.5 * 16);
+      var top = r.bottom + 8;
+      var left = Math.min(Math.max(8, r.right - width), window.innerWidth - width - 8);
+      panel.style.position = "fixed";
+      panel.style.top = top + "px";
+      panel.style.left = left + "px";
+      panel.style.right = "auto";
+      panel.style.bottom = "auto";
+      panel.style.width = width + "px";
+      panel.style.maxWidth = "calc(100vw - 1.5rem)";
+      panel.style.zIndex = "2147483001";
+      panel.style.pointerEvents = "auto";
+    }
+
+    _onReposition() {
+      if (this._open) this._positionPortalPanel();
     }
 
     _tile(p, current) {
@@ -290,6 +369,7 @@
       document.removeEventListener("mousedown", this._onDoc);
       document.removeEventListener("keydown", this._onKey);
       document.body.style.overflow = this._prevOverflow || "";
+      this._unmountPortal();
       this._render();
       emit("qira_launcher_closed", {
         currentProductId: this.currentProduct,
@@ -302,6 +382,7 @@
     _onDoc(e) {
       var path = e.composedPath ? e.composedPath() : [];
       if (path.indexOf(this) !== -1) return;
+      if (this._portalHost && path.indexOf(this._portalHost) !== -1) return;
       // mobile scrim handles close
       try {
         if (window.matchMedia("(max-width:640px)").matches) return;
