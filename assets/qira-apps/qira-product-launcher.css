@@ -254,9 +254,13 @@ a.qira-launcher__tile:hover,
   align-items: center;
   justify-content: center;
   border-radius: 1.1rem;
-  background: var(--ql-icon-bg);
+  /* Soft brand plate when product sets --ql-product-soft; else neutral */
+  background: var(--ql-product-soft, var(--ql-icon-bg));
   color: var(--ql-icon-fg);
   transition: box-shadow 0.12s ease, transform 0.12s ease;
+  /* Avoid layout shift while mark paints */
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
 }
 
 .qira-launcher__tile:hover .qira-launcher__icon {
@@ -264,14 +268,20 @@ a.qira-launcher__tile:hover,
 }
 
 .qira-launcher__tile--current .qira-launcher__icon {
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ql-focus) 55%, transparent);
-  color: var(--ql-here-fg);
-  background: var(--ql-here-bg);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ql-product-accent, var(--ql-focus)) 70%, transparent);
 }
 
+/* Full-color product marks fill the plate (real brand artwork, not mono strokes) */
 .qira-launcher__icon svg {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Dark theme: keep full-color marks; soften plate slightly */
+.qira-launcher[data-theme="dark"] .qira-launcher__icon {
+  background: color-mix(in srgb, var(--ql-product-accent, #9aa0a6) 22%, #3c4043);
 }
 
 /* Status sits under the name as a micro-label, not a corner chip */

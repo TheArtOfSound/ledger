@@ -7,6 +7,9 @@
       "tooltip": "Builds software through controlled steps and tracks the evidence supporting the result.",
       "url": "https://flows.oortstack.com",
       "icon": "flows",
+      "accentColor": "#1f6bb5",
+      "accentSoft": "#dbeafe",
+      "markInitial": "F",
       "status": "live",
       "order": 1,
       "visibleInLauncher": true
@@ -18,6 +21,9 @@
       "tooltip": "Manages your Qira account, AI providers, models, access, and usage.",
       "url": "https://oortstack.com",
       "icon": "oort",
+      "accentColor": "#f97316",
+      "accentSoft": "#ffedd5",
+      "markInitial": "O",
       "status": "live",
       "order": 2,
       "visibleInLauncher": true
@@ -29,6 +35,9 @@
       "tooltip": "Protects digital files and provides evidence that they remain unchanged.",
       "url": "https://secure.imagineqira.com",
       "icon": "qev",
+      "accentColor": "#0f766e",
+      "accentSoft": "#ccfbf1",
+      "markInitial": "Q",
       "status": "live",
       "order": 3,
       "visibleInLauncher": true
@@ -40,6 +49,9 @@
       "tooltip": "Keeps operational context and failed-attempt memory across long-running AI work.",
       "url": "https://lolm.imagineqira.com",
       "icon": "lolm",
+      "accentColor": "#6366f1",
+      "accentSoft": "#e0e7ff",
+      "markInitial": "L",
       "status": "research",
       "order": 4,
       "visibleInLauncher": true
@@ -51,6 +63,9 @@
       "tooltip": "Records AI work, usage, and operational history across Qira products.",
       "url": "https://ledger.imagineqira.com",
       "icon": "ledger",
+      "accentColor": "#22c55e",
+      "accentSoft": "#dcfce7",
+      "markInitial": "Ld",
       "status": "live",
       "order": 5,
       "visibleInLauncher": true
@@ -58,11 +73,14 @@
     {
       "id": "aex",
       "name": "AEX",
-      "shortDescription": "AI efficiency infrastructure",
-      "tooltip": "A planned system for measuring and verifying AI compute efficiency.",
-      "url": null,
+      "shortDescription": "Measure · verify · energy",
+      "tooltip": "Measures AI workload energy, verifies claims against a baseline, and seals evidence records.",
+      "url": "https://imagineqira.com/aex/",
       "icon": "aex",
-      "status": "coming_soon",
+      "accentColor": "#00e8c0",
+      "accentSoft": "#ccfbf1",
+      "markInitial": "A",
+      "status": "live",
       "order": 6,
       "visibleInLauncher": true
     }
@@ -72,6 +90,7 @@
     "https://oortstack.com",
     "https://secure.imagineqira.com",
     "https://lolm.imagineqira.com",
-    "https://ledger.imagineqira.com"
+    "https://ledger.imagineqira.com",
+    "https://imagineqira.com"
   ]
 }

@@ -45,26 +45,37 @@
       <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ledger.imagineqira.com/#org","name":"Ledger","url":"https://ledger.imagineqira.com","logo":"https://ledger.imagineqira.com/favicon.svg","description":"A local-first evidence layer for AI-assisted work. Members measure their own AI usage on their machine, sign it on their device, and publish a record anyone can verify in the browser.","parentOrganization":{"@type":"Organization","name":"Qira LLC","url":"https://imagineqira.com"}},{"@type":"WebSite","@id":"https://ledger.imagineqira.com/#website","url":"https://ledger.imagineqira.com","name":"Ledger — Evidence layer for AI-assisted work","publisher":{"@id":"https://ledger.imagineqira.com/#org"}}]}</script>
   
     <style id="qira-apps-nav">
-      /* Google-style placement: quiet top-right, no chrome chrome */
+      /*
+        Ledger SPA owns the topbar; inject launcher as last header control
+        after React mounts (see script below). Fallback fixed top-right
+        only until the header exists.
+      */
       #qira-apps-chrome {
         position: fixed;
-        top: max(8px, env(safe-area-inset-top, 0px));
-        right: max(8px, env(safe-area-inset-right, 0px));
+        top: max(10px, env(safe-area-inset-top, 0px));
+        right: max(12px, env(safe-area-inset-right, 0px));
         z-index: 2147483000;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 2px;
       }
-      @media (max-width: 640px) {
-        #qira-apps-chrome {
-          top: max(8px, env(safe-area-inset-top, 0px));
-          bottom: auto;
-          right: max(8px, env(safe-area-inset-right, 0px));
-        }
+      #qira-apps-chrome.is-in-header {
+        position: static;
+        top: auto;
+        right: auto;
+        z-index: auto;
+        margin-left: 8px;
+        flex-shrink: 0;
+      }
+      .topbar #qira-apps-chrome,
+      header.topbar #qira-apps-chrome,
+      .topbar .qira-apps-slot {
+        display: inline-flex;
+        align-items: center;
       }
     </style>
-    <script src="/assets/qira-apps/qira-product-launcher.js?v=20260807c" defer></script>
+    <script src="/assets/qira-apps/qira-product-launcher.js?v=20260807nav" defer></script>
 
   </head>
   <body>
@@ -74,6 +85,46 @@
     </div>
 
     <div id="root"></div>
+    <script>
+      /* Move launcher into Ledger header as last control when present */
+      (function () {
+        function place() {
+          var chrome = document.getElementById('qira-apps-chrome');
+          if (!chrome) return;
+          var header =
+            document.querySelector('header.topbar') ||
+            document.querySelector('.topbar') ||
+            document.querySelector('header');
+          if (!header) return;
+          var slot = header.querySelector('.qira-apps-slot');
+          if (!slot) {
+            slot = document.createElement('div');
+            slot.className = 'qira-apps-slot';
+            slot.setAttribute('aria-label', 'Qira Apps');
+            header.appendChild(slot);
+          }
+          if (chrome.parentNode !== slot) {
+            slot.appendChild(chrome);
+            chrome.classList.add('is-in-header');
+          }
+        }
+        var tries = 0;
+        var id = setInterval(function () {
+          place();
+          tries += 1;
+          if (document.querySelector('header.topbar, .topbar') || tries > 40) {
+            place();
+            if (tries > 40) clearInterval(id);
+            if (document.querySelector('header.topbar, .topbar')) clearInterval(id);
+          }
+        }, 100);
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', place);
+        } else {
+          place();
+        }
+      })();
+    </script>
     <!--
       Clean-URL restore for GitHub Pages. A hard load of /people is served by
       404.html, which redirects to /?/people (a real 200). This restores the
