@@ -1,0 +1,23 @@
+{
+  "launcherVersion": "1.0.0",
+  "registryVersion": "471069464c1ce0840ad2712c0ea630cdbaffd371",
+  "productCount": 6,
+  "productIds": [
+    "flows",
+    "oort",
+    "qev",
+    "lolm",
+    "ledger",
+    "aex"
+  ],
+  "buildSha": "471069464c1ce0840ad2712c0ea630cdbaffd371",
+  "registrySha256": "82b353df45e3d2a04360a48a1aa3f8f1be3c8ae101747a2a5e686e9e1716f1d1",
+  "assets": {
+    "js": "qira-product-launcher.js",
+    "css": "qira-product-launcher.css",
+    "json": "qira-products.json"
+  },
+  "jsSha256": "fd6a9ef8dd6f4f67f7dd6e6e0bbbe2cd59cb8be4587e3e29a953075046ce1152",
+  "cssSha256": "5b9bc9857843e8c55eb7637a2bd93d61805c9c338db8f486343703fd034a4471",
+  "generatedAt": "2026-08-07T02:11:24.133Z"
+}

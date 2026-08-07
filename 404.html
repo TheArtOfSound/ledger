@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05070d" />
+
+    <title>Ledger — Evidence layer for AI-assisted work</title>
+    <meta
+      name="description"
+      content="A local-first evidence layer for AI-assisted work: what you built, the tools and models you use, how efficiently you work, and which parts are independently trustworthy. Runs on your machine — no account, and your prompts, code, and file paths never leave your computer."
+    />
+    <link rel="canonical" href="https://ledger.imagineqira.com/" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph (Facebook, LinkedIn, Slack, Discord, iMessage) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ledger — Evidence layer for AI-assisted work" />
+    <meta property="og:title" content="Evidence of how you work with AI — not a token leaderboard" />
+    <meta
+      property="og:description"
+      content="Measured on your machine. Signed on your device. Verified in the browser. Run the open-source collector, publish a signed summary of your AI work — no account, nothing leaves your computer."
+    />
+    <meta property="og:url" content="https://ledger.imagineqira.com/" />
+    <meta property="og:image" content="https://ledger.imagineqira.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ledger — evidence of how you work with AI, not a token leaderboard" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Evidence of how you work with AI — not a token leaderboard" />
+    <meta
+      name="twitter:description"
+      content="Measured on your machine. Signed on your device. Verified in the browser. Open-source, local-first — nothing leaves your computer."
+    />
+    <meta name="twitter:image" content="https://ledger.imagineqira.com/og.png" />
+    <script type="module" crossorigin src="/assets/index-C3KLol8k.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-8wbDGeXA.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      Clean-URL restore for GitHub Pages. A hard load of /people is served by
+      404.html, which redirects to /?/people (a real 200). This restores the
+      clean path before the app boots, so the address bar reads /people and the
+      status is 200 — no visible 404. See public/404.html.
+    -->
+    <script>
+      (function () {
+        var l = window.location;
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) { return s.replace(/~and~/g, '&'); })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })();
+    </script>
+  </body>
+</html>
