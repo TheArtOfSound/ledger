@@ -1,6 +1,6 @@
 {
   "launcherVersion": "1.0.0",
-  "registryVersion": "1a4cc4e6f2335060e2253c0bdc027c77d974dae8",
+  "registryVersion": "78853760caa0ea236ead9d1b6adf2f46d76ecc21",
   "productCount": 6,
   "productIds": [
     "flows",
@@ -10,14 +10,14 @@
     "ledger",
     "aex"
   ],
-  "buildSha": "1a4cc4e6f2335060e2253c0bdc027c77d974dae8",
+  "buildSha": "78853760caa0ea236ead9d1b6adf2f46d76ecc21",
   "registrySha256": "82b353df45e3d2a04360a48a1aa3f8f1be3c8ae101747a2a5e686e9e1716f1d1",
   "assets": {
     "js": "qira-product-launcher.js",
     "css": "qira-product-launcher.css",
     "json": "qira-products.json"
   },
-  "jsSha256": "9fbd22653ad56c6f14568b60bcbfb65af2fdf348805043fe26fc1b9e32c2a640",
-  "cssSha256": "c6a0b564861f1c1753db853adf63c03c3a4dfef186ce6abc6d6a68911a13f338",
-  "generatedAt": "2026-08-07T02:56:21.100Z"
+  "jsSha256": "40f5c3867c56fa784fe9b90011ded2304dd84eae534037ac1588115102462c1a",
+  "cssSha256": "4aa1644be82a80f72d9393b58f0cac78f21c8c4f0714c314bdbe7abd4d8d1405",
+  "generatedAt": "2026-08-07T03:08:47.366Z"
 }
