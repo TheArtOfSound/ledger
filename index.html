@@ -45,19 +45,22 @@
       <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ledger.imagineqira.com/#org","name":"Ledger","url":"https://ledger.imagineqira.com","logo":"https://ledger.imagineqira.com/favicon.svg","description":"A local-first evidence layer for AI-assisted work. Members measure their own AI usage on their machine, sign it on their device, and publish a record anyone can verify in the browser.","parentOrganization":{"@type":"Organization","name":"Qira LLC","url":"https://imagineqira.com"}},{"@type":"WebSite","@id":"https://ledger.imagineqira.com/#website","url":"https://ledger.imagineqira.com","name":"Ledger — Evidence layer for AI-assisted work","publisher":{"@id":"https://ledger.imagineqira.com/#org"}}]}</script>
   
     <style id="qira-apps-nav">
+      /* Google-style placement: quiet top-right, no chrome chrome */
       #qira-apps-chrome {
         position: fixed;
-        top: max(12px, env(safe-area-inset-top, 0px));
-        right: max(12px, env(safe-area-inset-right, 0px));
+        top: max(8px, env(safe-area-inset-top, 0px));
+        right: max(8px, env(safe-area-inset-right, 0px));
         z-index: 2147483000;
         display: flex;
         align-items: center;
+        justify-content: center;
+        padding: 2px;
       }
       @media (max-width: 640px) {
         #qira-apps-chrome {
-          top: auto;
-          bottom: max(16px, env(safe-area-inset-bottom, 0px));
-          right: max(16px, env(safe-area-inset-right, 0px));
+          top: max(8px, env(safe-area-inset-top, 0px));
+          bottom: auto;
+          right: max(8px, env(safe-area-inset-right, 0px));
         }
       }
     </style>
