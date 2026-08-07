@@ -195,6 +195,16 @@
             if (toggle) header.insertBefore(slot, toggle);
             else header.appendChild(slot);
           }
+          var home = slot.querySelector('.qira-home-link');
+          if (!home) {
+            home = document.createElement('a');
+            home.className = 'qira-home-link';
+            home.href = 'https://imagineqira.com/';
+            home.title = 'Qira company site';
+            home.textContent = 'Qira';
+            home.style.cssText = 'font:600 12px/1 Inter,system-ui,sans-serif;color:#596273;text-decoration:none;letter-spacing:.04em;margin-right:6px;';
+            slot.insertBefore(home, slot.firstChild);
+          }
           if (chrome.parentNode !== slot) {
             slot.appendChild(chrome);
           }
