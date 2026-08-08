@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-08-07T02:28:50.632Z",
+  "generatedAt": "2026-08-08T07:51:26.531Z",
   "timezone": "America/Phoenix",
   "source": "local_mac_sanitized_ccusage",
-  "collectorVersion": "0.4.0",
+  "collectorVersion": "0.5.0",
   "isSampleData": false,
   "totals": {
-    "inputTokens": 327766243,
-    "outputTokens": 97786161,
+    "inputTokens": 340388009,
+    "outputTokens": 99489919,
     "cacheCreationTokens": 684907717,
-    "cacheReadTokens": 36769875032,
-    "cachedTokens": 37454782749,
-    "freshTokens": 425552404,
-    "totalTokens": 37880335153,
+    "cacheReadTokens": 37046412760,
+    "cachedTokens": 37731320477,
+    "freshTokens": 439877928,
+    "totalTokens": 38171198405,
     "estimatedCostUsd": null
   },
   "providers": {
@@ -27,13 +27,13 @@
         "gpt-5.6-sol",
         "gpt-5.6-terra"
       ],
-      "inputTokens": 315124720,
-      "outputTokens": 32200371,
+      "inputTokens": 316934893,
+      "outputTokens": 32441032,
       "cacheCreationTokens": 0,
-      "cacheReadTokens": 11033179392,
-      "cachedTokens": 11033179392,
-      "freshTokens": 347325091,
-      "totalTokens": 11380504483,
+      "cacheReadTokens": 11111289856,
+      "cachedTokens": 11111289856,
+      "freshTokens": 349375925,
+      "totalTokens": 11460665781,
       "estimatedCostUsd": null
     },
     "claude": {
@@ -55,6 +55,23 @@
       "cachedTokens": 26421603357,
       "freshTokens": 78227313,
       "totalTokens": 26499830670,
+      "estimatedCostUsd": null
+    },
+    "grok": {
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 10811593,
+      "outputTokens": 1463097,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 198427264,
+      "cachedTokens": 198427264,
+      "freshTokens": 12274690,
+      "totalTokens": 210701954,
       "estimatedCostUsd": null
     }
   },
@@ -2898,6 +2915,24 @@
       "estimatedCostUsd": null
     },
     {
+      "date": "2026-07-17",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 10531,
+      "outputTokens": 343,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 2560,
+      "cachedTokens": 2560,
+      "freshTokens": 10874,
+      "totalTokens": 13434,
+      "estimatedCostUsd": null
+    },
+    {
       "date": "2026-07-18",
       "provider": "claude",
       "displayName": "Claude Code",
@@ -2939,6 +2974,24 @@
       "cachedTokens": 34832128,
       "freshTokens": 1989268,
       "totalTokens": 36821396,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-18",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 319821,
+      "outputTokens": 8677,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 588800,
+      "cachedTokens": 588800,
+      "freshTokens": 328498,
+      "totalTokens": 917298,
       "estimatedCostUsd": null
     },
     {
@@ -2986,6 +3039,42 @@
       "estimatedCostUsd": null
     },
     {
+      "date": "2026-07-19",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 441535,
+      "outputTokens": 124973,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 9451136,
+      "cachedTokens": 9451136,
+      "freshTokens": 566508,
+      "totalTokens": 10017644,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-20",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 116907,
+      "outputTokens": 36933,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 2776064,
+      "cachedTokens": 2776064,
+      "freshTokens": 153840,
+      "totalTokens": 2929904,
+      "estimatedCostUsd": null
+    },
+    {
       "date": "2026-07-21",
       "provider": "codex",
       "displayName": "Codex",
@@ -3008,6 +3097,24 @@
       "estimatedCostUsd": null
     },
     {
+      "date": "2026-07-21",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 21552,
+      "outputTokens": 11155,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1438720,
+      "cachedTokens": 1438720,
+      "freshTokens": 32707,
+      "totalTokens": 1471427,
+      "estimatedCostUsd": null
+    },
+    {
       "date": "2026-07-22",
       "provider": "claude",
       "displayName": "Claude Code",
@@ -3027,6 +3134,24 @@
       "cachedTokens": 170797017,
       "freshTokens": 527148,
       "totalTokens": 171324165,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-22",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 105056,
+      "outputTokens": 52767,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 865408,
+      "cachedTokens": 865408,
+      "freshTokens": 157823,
+      "totalTokens": 1023231,
       "estimatedCostUsd": null
     },
     {
@@ -3071,6 +3196,24 @@
       "cachedTokens": 1509769162,
       "freshTokens": 2938348,
       "totalTokens": 1512707510,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-24",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 61216,
+      "outputTokens": 421,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 32128,
+      "cachedTokens": 32128,
+      "freshTokens": 61637,
+      "totalTokens": 93765,
       "estimatedCostUsd": null
     },
     {
@@ -3140,6 +3283,24 @@
       "estimatedCostUsd": null
     },
     {
+      "date": "2026-07-26",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 3207027,
+      "outputTokens": 324194,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 48073984,
+      "cachedTokens": 48073984,
+      "freshTokens": 3531221,
+      "totalTokens": 51605205,
+      "estimatedCostUsd": null
+    },
+    {
       "date": "2026-07-27",
       "provider": "codex",
       "displayName": "Codex",
@@ -3162,6 +3323,24 @@
       "estimatedCostUsd": null
     },
     {
+      "date": "2026-07-27",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 149813,
+      "outputTokens": 20862,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 4906368,
+      "cachedTokens": 4906368,
+      "freshTokens": 170675,
+      "totalTokens": 5077043,
+      "estimatedCostUsd": null
+    },
+    {
       "date": "2026-07-28",
       "provider": "codex",
       "displayName": "Codex",
@@ -3181,6 +3360,24 @@
       "cachedTokens": 491383296,
       "freshTokens": 15624538,
       "totalTokens": 507007834,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-28",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 178421,
+      "outputTokens": 26649,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 7336448,
+      "cachedTokens": 7336448,
+      "freshTokens": 205070,
+      "totalTokens": 7541518,
       "estimatedCostUsd": null
     },
     {
@@ -3228,6 +3425,24 @@
       "estimatedCostUsd": null
     },
     {
+      "date": "2026-07-29",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 1887361,
+      "outputTokens": 246171,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 23174528,
+      "cachedTokens": 23174528,
+      "freshTokens": 2133532,
+      "totalTokens": 25308060,
+      "estimatedCostUsd": null
+    },
+    {
       "date": "2026-07-30",
       "provider": "claude",
       "displayName": "Claude Code",
@@ -3247,6 +3462,24 @@
       "cachedTokens": 404137252,
       "freshTokens": 897075,
       "totalTokens": 405034327,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-07-30",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 1229179,
+      "outputTokens": 123218,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 11231616,
+      "cachedTokens": 11231616,
+      "freshTokens": 1352397,
+      "totalTokens": 12584013,
       "estimatedCostUsd": null
     },
     {
@@ -3272,6 +3505,24 @@
       "estimatedCostUsd": null
     },
     {
+      "date": "2026-07-31",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 30154,
+      "outputTokens": 18171,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1994624,
+      "cachedTokens": 1994624,
+      "freshTokens": 48325,
+      "totalTokens": 2042949,
+      "estimatedCostUsd": null
+    },
+    {
       "date": "2026-08-01",
       "provider": "codex",
       "displayName": "Codex",
@@ -3292,6 +3543,176 @@
       "freshTokens": 3457586,
       "totalTokens": 102439986,
       "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-01",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 67086,
+      "outputTokens": 11147,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 1844096,
+      "cachedTokens": 1844096,
+      "freshTokens": 78233,
+      "totalTokens": 1922329,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-02",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 958137,
+      "outputTokens": 199381,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 26079744,
+      "cachedTokens": 26079744,
+      "freshTokens": 1157518,
+      "totalTokens": 27237262,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-03",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 710151,
+      "outputTokens": 96878,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 19650432,
+      "cachedTokens": 19650432,
+      "freshTokens": 807029,
+      "totalTokens": 20457461,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-04",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 36551,
+      "outputTokens": 14114,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 4010368,
+      "cachedTokens": 4010368,
+      "freshTokens": 50665,
+      "totalTokens": 4061033,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-05",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 180348,
+      "outputTokens": 41154,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 5149440,
+      "cachedTokens": 5149440,
+      "freshTokens": 221502,
+      "totalTokens": 5370942,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-06",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 723730,
+      "outputTokens": 85319,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 20979712,
+      "cachedTokens": 20979712,
+      "freshTokens": 809049,
+      "totalTokens": 21788761,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-07",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 963826,
+      "outputTokens": 104997,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 30778240,
+      "cachedTokens": 30778240,
+      "freshTokens": 1068823,
+      "totalTokens": 31847063,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-07",
+      "provider": "grok",
+      "displayName": "Grok",
+      "models": [
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
+      ],
+      "inputTokens": 377017,
+      "outputTokens": 20570,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 8841088,
+      "cachedTokens": 8841088,
+      "freshTokens": 397587,
+      "totalTokens": 9238675,
+      "estimatedCostUsd": null
+    },
+    {
+      "date": "2026-08-08",
+      "provider": "codex",
+      "displayName": "Codex",
+      "models": [
+        "gpt-5.3-codex",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "inputTokens": 846347,
+      "outputTokens": 135664,
+      "cacheCreationTokens": 0,
+      "cacheReadTokens": 47332224,
+      "cachedTokens": 47332224,
+      "freshTokens": 982011,
+      "totalTokens": 48314235,
+      "estimatedCostUsd": null
     }
   ],
   "qiraProjects": [
@@ -3303,7 +3724,7 @@
       "found": true,
       "git": {
         "branch": "main",
-        "commit": "d4958e1",
+        "commit": "2196544",
         "changedFiles": 0
       },
       "stack": [],
@@ -3455,33 +3876,17 @@
       "found": true,
       "git": {
         "branch": "main",
-        "commit": "5e9ce67",
-        "changedFiles": 1
+        "commit": "5c140ce",
+        "changedFiles": 0
       },
-      "stack": [
-        "React",
-        "Vite",
-        "TypeScript",
-        "Tailwind"
-      ],
-      "scripts": [
-        "dev",
-        "build",
-        "lint",
-        "preview"
-      ],
+      "stack": [],
+      "scripts": [],
       "fileCounts": {
-        "docs": 1,
-        "js": 1,
-        "html": 3,
-        "json": 5,
-        "tsx": 3,
-        "css": 1,
-        "ts": 1
+        "html": 1
       },
-      "lastModified": "2026-06-13T12:12:02.092Z",
+      "lastModified": "2026-08-07T05:06:57.310Z",
       "scannerWarnings": [
-        "match:scored score:585 text~pti, text~phoenix-traffic, domain=pti.imagineqira.com, package.json, vite"
+        "match:scored score:870 folder=pti, text~pti, text~phoenix-traffic, domain=pti.imagineqira.com"
       ],
       "publicUrl": "https://pti.imagineqira.com"
     },
@@ -3515,7 +3920,7 @@
       "found": true,
       "git": {
         "branch": "main",
-        "commit": "d4958e1",
+        "commit": "2196544",
         "changedFiles": 0
       },
       "stack": [
@@ -3542,14 +3947,14 @@
       "fileCounts": {
         "docs": 31,
         "py": 2,
-        "ts": 104,
+        "ts": 109,
         "json": 29,
         "js": 22,
         "html": 4,
         "css": 2,
         "tsx": 22
       },
-      "lastModified": "2026-08-07T02:28:44.273Z",
+      "lastModified": "2026-08-08T07:51:24.907Z",
       "scannerWarnings": [
         "match:explicit score:10000 explicit-path, folder=tokens, text~tokens, text~qira-agent-usage-observatory, package~qira-ledger, text~qira-ledger, domain=ledger.imagineqira.com, package.json, vite"
       ]
@@ -3562,7 +3967,18 @@
     "privacyMode": "allowlist_no_paths"
   },
   "warnings": [
-    "Codex totals are approximate (~+7% upper bound) due to provider re-emission; see methodology."
+    "Codex totals are approximate (~+7% upper bound) due to provider re-emission; see methodology.",
+    "ccusage opencode daily returned JSON but no recognized token records",
+    "ccusage amp daily returned JSON but no recognized token records",
+    "ccusage droid daily returned JSON but no recognized token records",
+    "ccusage codebuff daily returned JSON but no recognized token records",
+    "ccusage hermes daily returned JSON but no recognized token records",
+    "ccusage pi daily returned JSON but no recognized token records",
+    "ccusage goose daily returned JSON but no recognized token records",
+    "ccusage kilo daily returned JSON but no recognized token records",
+    "ccusage copilot daily returned JSON but no recognized token records",
+    "ccusage gemini daily returned JSON but no recognized token records",
+    "ccusage kimi daily returned JSON but no recognized token records"
   ],
   "measurement": {
     "classes": {
@@ -3612,7 +4028,7 @@
         "method": "Model identifiers reported by the provider logs."
       }
     },
-    "exactTotalTokens": 37880335153,
+    "exactTotalTokens": 38171198405,
     "estimatedOnly": {
       "costUsd": null,
       "costMicroUsd": null
@@ -3689,18 +4105,19 @@
       }
     },
     "activity": {
-      "referenceDate": "2026-08-06",
-      "activeDays": 104,
+      "referenceDate": "2026-08-08",
+      "activeDays": 112,
       "firstActiveDate": "2026-02-26",
-      "lastActiveDate": "2026-08-01",
-      "spanDays": 157,
-      "activeDaysLast30": 24,
-      "activeDaysLast90": 72,
-      "currentStreakDays": 0,
-      "longestStreakDays": 26,
+      "lastActiveDate": "2026-08-08",
+      "spanDays": 164,
+      "activeDaysLast30": 30,
+      "activeDaysLast90": 80,
+      "currentStreakDays": 46,
+      "longestStreakDays": 46,
       "toolsUsed": [
         "Codex",
-        "Claude Code"
+        "Claude Code",
+        "Grok"
       ],
       "modelsUsed": [
         "claude-fable-5",
@@ -3716,7 +4133,10 @@
         "gpt-5.5",
         "gpt-5.6-luna",
         "gpt-5.6-sol",
-        "gpt-5.6-terra"
+        "gpt-5.6-terra",
+        "grok-4.5",
+        "grok-4.5-build",
+        "grok-4.5-build-free"
       ],
       "projectsActive": 8
     },
@@ -3816,10 +4236,10 @@
       "note": "Availability, engagement, and compensation are set by the member. They are self-declared preferences, not verified terms."
     },
     "efficiency": {
-      "cachedSharePct": 98.9,
-      "freshSharePct": 1.1,
-      "outputSharePct": 23,
-      "avgTokensPerActiveDay": 364233992,
+      "cachedSharePct": 98.8,
+      "freshSharePct": 1.2,
+      "outputSharePct": 22.6,
+      "avgTokensPerActiveDay": 340814271,
       "note": "Efficiency signals, not a ranking. Producing the same verified result with fewer tokens is better. Cache reuse is the measured proxy for context-injection efficiency (reusing context instead of resending it). Cost per outcome requires connected outcomes, which remain a separate evidence class."
     },
     "practice": {
@@ -3864,7 +4284,7 @@
       {
         "label": "Collector-observed",
         "status": "verified",
-        "basis": "AI activity was read from the provider's own usage accounting in local logs on this device (104 active days; 8 project(s) seen locally). This is device-local observation, not independent confirmation."
+        "basis": "AI activity was read from the provider's own usage accounting in local logs on this device (112 active days; 8 project(s) seen locally). This is device-local observation, not independent confirmation."
       },
       {
         "label": "Identity-linked",
@@ -3932,19 +4352,23 @@
   },
   "sourceOfTruth": "event_ledger",
   "providerConfidence": {
-    "claude": {
-      "confidence": "high",
-      "note": "Event-level, deduplicated by provider message id. Reconciles to within 0.05% of ccusage across all measured days."
-    },
     "codex": {
       "confidence": "medium",
-      "note": "Event-level. Codex re-emits a turn’s usage without advancing its cumulative counter in roughly 15% of sessions, so totals may overstate by up to ~7%. Treated as approximate."
+      "note": "Event-level. Codex can re-emit turn usage; totals may overstate by up to ~7%."
+    },
+    "claude": {
+      "confidence": "high",
+      "note": "Event-level, deduplicated by provider message id. Reconciles closely to ccusage."
+    },
+    "grok": {
+      "confidence": "high",
+      "note": "Session-final usage from local Grok Build updates.jsonl (one event per session)."
     }
   },
   "verification": {
     "schemaVersion": "2.0.0",
     "canonicalSchemaVersion": "2.0.0",
-    "snapshotSha256": "d14f8b5c30d1807543beb6cab3ae810b9bcc203035742c9c88583483c90899ee",
+    "snapshotSha256": "e12128d050c6c15d81017cb80eca5581bc6b438a1d3f752146a194f596f87f97",
     "rawLogsPublished": false,
     "gitCommit": null,
     "proves": "The hash proves the published snapshot was not altered after generation. It does not prove the private source logs were immutable, only that this public file is intact."
@@ -4210,13 +4634,13 @@
   "telemetry": {
     "measurementClass": "collector_derived",
     "confidence": "medium",
-    "totalEvents": 152155,
+    "totalEvents": 153001,
     "hierarchy": [
       {
         "provider": "codex",
-        "events": 84024,
+        "events": 84675,
         "sessions": 0,
-        "totalTokens": 11380504483,
+        "totalTokens": 11460665781,
         "models": [
           {
             "model": "gpt-5.5",
@@ -4232,9 +4656,9 @@
           },
           {
             "model": "gpt-5.6-sol",
-            "events": 16635,
+            "events": 17052,
             "sessions": 0,
-            "totalTokens": 2236077362
+            "totalTokens": 2282183544
           },
           {
             "model": "gpt-5.4",
@@ -4244,9 +4668,9 @@
           },
           {
             "model": "(unattributed)",
-            "events": 1488,
+            "events": 1664,
             "sessions": 0,
-            "totalTokens": 232679376
+            "totalTokens": 259859146
           },
           {
             "model": "gpt-5.4-mini",
@@ -4255,16 +4679,16 @@
             "totalTokens": 23923103
           },
           {
+            "model": "gpt-5.6-terra",
+            "events": 72,
+            "sessions": 0,
+            "totalTokens": 7803770
+          },
+          {
             "model": "gpt-5.6-luna",
             "events": 22,
             "sessions": 0,
             "totalTokens": 909042
-          },
-          {
-            "model": "gpt-5.6-terra",
-            "events": 14,
-            "sessions": 0,
-            "totalTokens": 928424
           }
         ]
       },
@@ -4317,11 +4741,37 @@
             "totalTokens": 39750368
           }
         ]
+      },
+      {
+        "provider": "grok",
+        "events": 195,
+        "sessions": 0,
+        "totalTokens": 210701954,
+        "models": [
+          {
+            "model": "grok-4.5-build",
+            "events": 186,
+            "sessions": 0,
+            "totalTokens": 206705224
+          },
+          {
+            "model": "grok-4.5",
+            "events": 5,
+            "sessions": 0,
+            "totalTokens": 2879734
+          },
+          {
+            "model": "grok-4.5-build-free",
+            "events": 4,
+            "sessions": 0,
+            "totalTokens": 1116996
+          }
+        ]
       }
     ],
     "sessions": {
       "distinctSessions": 45,
-      "eventsWithoutSession": 84024,
+      "eventsWithoutSession": 84870,
       "medianEventsPerSession": 464,
       "p95EventsPerSession": 4776,
       "maxEventsPerSession": 14840,
@@ -4347,12 +4797,12 @@
     "algorithm": "ed25519",
     "publicKey": "MCowBQYDK2VwAyEACtM+NkNEKJfV8ABWUexYi/JwTYyoPn3gaZ+wAMvd/UA=",
     "keyId": "defe470fe73a66c6",
-    "issuedAt": "2026-08-07T02:28:52.666Z",
-    "nonce": "054fe1f4968613545ccd58a4040b9418",
+    "issuedAt": "2026-08-08T07:51:28.352Z",
+    "nonce": "bbd0d083a1f76bd622fbc4536ceb9752",
     "scope": "published_snapshot",
     "canonicalizationSpec": "RFC8785-subset; see docs/architecture/CANONICALIZATION.md",
-    "payloadSha256": "3506121134df8513d4fdca5363592b1f5e7ac9fb6df7dcc9b9d9915322694f45",
-    "signature": "359dCleLMdQtP22Jh8iGrJ57b00tcSpvL0fLYThW5PFZif1Oawuxq6hOznJhLu0FUC3jtH/pnSiiT5ekGbPnDA==",
+    "payloadSha256": "2ddff6bbd32094008c41870aa9947626a13e8c2ac248ecac33b352724cd34053",
+    "signature": "Y10Y/CtJxToTvCy7ab/vOG/8AK8BW18//yOgdIh0gpWVSblKGWaGsMo0R++RzNXyz5VhbcQUnrDyBULZa+hkDg==",
     "proves": "This snapshot was produced by a collector holding this device key and has not been altered since signing.",
     "doesNotProve": [
       "It does not prove the provider source logs were genuine or unmodified.",

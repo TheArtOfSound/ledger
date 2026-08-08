@@ -1,12 +1,11 @@
 <!doctype html>
-<!-- qira-deploy-stamp:20260807c2-ledger-nav-ledger-nav -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#05070d" />
 
-    <title>Ledger by Qira | Verifiable Records of AI Work</title>
+    <title>Ledger — Evidence layer for AI-assisted work</title>
     <meta
       name="description"
       content="A local-first evidence layer for AI-assisted work: what you built, the tools and models you use, how efficiently you work, and which parts are independently trustworthy. Runs on your machine — no account, and your prompts, code, and file paths never leave your computer."
@@ -20,7 +19,7 @@
 
     <!-- Open Graph (Facebook, LinkedIn, Slack, Discord, iMessage) -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Ledger by Qira" />
+    <meta property="og:site_name" content="Ledger — Evidence layer for AI-assisted work" />
     <meta property="og:title" content="Evidence of how you work with AI — not a token leaderboard" />
     <meta
       property="og:description"
@@ -40,223 +39,13 @@
       content="Measured on your machine. Signed on your device. Verified in the browser. Open-source, local-first — nothing leaves your computer."
     />
     <meta name="twitter:image" content="https://ledger.imagineqira.com/og.png" />
-    <script type="module" crossorigin src="/assets/index-C3KLol8k.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-8wbDGeXA.css">
-      <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://imagineqira.com/#organization","name":"Qira LLC","url":"https://imagineqira.com/","logo":"https://imagineqira.com/assets/qira-icon.png"},{"@type":"Organization","@id":"https://ledger.imagineqira.com/#org","name":"Ledger","url":"https://ledger.imagineqira.com","logo":"https://ledger.imagineqira.com/favicon.svg","description":"A local-first evidence layer for AI-assisted work.","parentOrganization":{"@id":"https://imagineqira.com/#organization"}},{"@type":"WebSite","@id":"https://ledger.imagineqira.com/#website","name":"Ledger by Qira","alternateName":["Ledger"],"url":"https://ledger.imagineqira.com/","publisher":{"@id":"https://imagineqira.com/#organization"},"description":"Local-first, device-signed evidence of AI-assisted work, verified in the browser."}]}</script>
-  
-        <style id="qira-apps-nav">
-      /*
-        Ledger mobile nav fix (20260807c):
-        - Do NOT inject into React topbar flex (that collapsed the bar).
-        - Apps chrome is fixed, independent of header layout.
-        - Mobile drawer is re-parented to <body> so it cannot break sticky/flex.
-      */
-      #qira-apps-chrome {
-        position: fixed !important;
-        top: max(10px, env(safe-area-inset-top, 0px)) !important;
-        right: max(12px, env(safe-area-inset-right, 0px)) !important;
-        z-index: 80 !important;
-        display: flex !important;
-        align-items: center !important;
-        gap: 6px !important;
-        padding: 4px 6px !important;
-        border-radius: 12px !important;
-        background: rgba(255,255,255,0.92) !important;
-        border: 1px solid #e5e8ee !important;
-        box-shadow: 0 1px 3px rgba(16,24,40,0.08) !important;
-        pointer-events: auto !important;
-      }
-      #qira-apps-chrome .qira-home-link {
-        font: 600 12px/1 Inter, system-ui, sans-serif !important;
-        color: #596273 !important;
-        text-decoration: none !important;
-        letter-spacing: 0.04em !important;
-        padding: 0 4px !important;
-      }
-      /* Leave room so fixed chrome doesn't cover hamburger */
-      @media (max-width: 900px) {
-        header.topbar,
-        .topbar {
-          width: 100% !important;
-          max-width: none !important;
-          margin: 0 !important;
-          min-height: 56px !important;
-          height: 56px !important;
-          padding: 0 56px 0 12px !important; /* right pad for fixed apps chrome */
-          box-sizing: border-box !important;
-          display: flex !important;
-          flex-wrap: nowrap !important;
-          align-items: center !important;
-          gap: 8px !important;
-          position: sticky !important;
-          top: 0 !important;
-          z-index: 40 !important;
-          background: #ffffffe6 !important;
-          backdrop-filter: blur(18px) !important;
-          -webkit-backdrop-filter: blur(18px) !important;
-          border-bottom: 1px solid #e5e8eebf !important;
-        }
-        .topbar .brand {
-          flex: 0 1 auto !important;
-          min-width: 0 !important;
-        }
-        .topbar .topsearch,
-        .topbar .desktop-nav {
-          display: none !important;
-        }
-        .topbar .menu-toggle {
-          display: inline-flex !important;
-          margin-left: auto !important;
-          flex-shrink: 0 !important;
-          position: relative !important;
-          z-index: 45 !important;
-        }
-        /* Drawer lives on body after portal; keep rules for both */
-        .mobile-nav,
-        body > .mobile-nav,
-        #mobile-nav {
-          position: fixed !important;
-          top: 0 !important;
-          right: 0 !important;
-          bottom: 0 !important;
-          left: auto !important;
-          width: min(300px, 86vw) !important;
-          max-width: 320px !important;
-          z-index: 90 !important;
-          background: #fff !important;
-          border-left: 1px solid #dfe3ea !important;
-          box-shadow: -18px 0 50px rgba(20,30,50,0.12) !important;
-          flex-direction: column !important;
-          gap: 4px !important;
-          padding: max(72px, calc(56px + env(safe-area-inset-top, 0px))) 18px 28px !important;
-          overflow-y: auto !important;
-          box-sizing: border-box !important;
-          transition: transform 0.2s ease, visibility 0.2s ease !important;
-        }
-        /* Closed: fully gone — no half-white panel */
-        header.topbar:not(.is-menu-open) .mobile-nav,
-        .topbar:not(.is-menu-open) .mobile-nav,
-        body:not(.ledger-menu-open) > .mobile-nav,
-        body:not(.ledger-menu-open) > #mobile-nav {
-          display: none !important;
-          visibility: hidden !important;
-          pointer-events: none !important;
-          transform: translateX(105%) !important;
-          opacity: 0 !important;
-        }
-        header.topbar.is-menu-open .mobile-nav,
-        .topbar.is-menu-open .mobile-nav,
-        body.ledger-menu-open > .mobile-nav,
-        body.ledger-menu-open > #mobile-nav {
-          display: flex !important;
-          visibility: visible !important;
-          pointer-events: auto !important;
-          transform: translateX(0) !important;
-          opacity: 1 !important;
-        }
-        .menu-backdrop,
-        body > .menu-backdrop {
-          position: fixed !important;
-          inset: 0 !important;
-          z-index: 85 !important;
-          background: rgba(7, 8, 13, 0.42) !important;
-          border: 0 !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-        header.topbar:not(.is-menu-open) .menu-backdrop,
-        .topbar:not(.is-menu-open) .menu-backdrop,
-        body:not(.ledger-menu-open) > .menu-backdrop {
-          display: none !important;
-          pointer-events: none !important;
-        }
-        header.topbar.is-menu-open .menu-backdrop,
-        .topbar.is-menu-open .menu-backdrop,
-        body.ledger-menu-open > .menu-backdrop {
-          display: block !important;
-          pointer-events: auto !important;
-        }
-        /* Hide fixed apps chrome while menu open so it doesn't sit over drawer */
-        body.ledger-menu-open #qira-apps-chrome {
-          visibility: hidden !important;
-          pointer-events: none !important;
-        }
-      }
-      @media (min-width: 901px) {
-        #qira-apps-chrome {
-          top: max(14px, env(safe-area-inset-top, 0px)) !important;
-          right: max(20px, env(safe-area-inset-right, 0px)) !important;
-        }
-      }
-    </style>
-    <script src="/assets/qira-apps/qira-product-launcher.js?v=20260807c2" defer></script>
-
+    <script src="/assets/qira-apps/qira-product-launcher.js?v=20260808" defer></script>
+    <script type="module" crossorigin src="/assets/index-Dv1ZPZLn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DiiZ0fPQ.css">
+      <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ledger.imagineqira.com/#org","name":"Ledger","url":"https://ledger.imagineqira.com","logo":"https://ledger.imagineqira.com/favicon.svg","description":"A local-first evidence layer for AI-assisted work. Members measure their own AI usage on their machine, sign it on their device, and publish a record anyone can verify in the browser.","parentOrganization":{"@type":"Organization","name":"Qira LLC","url":"https://imagineqira.com"}},{"@type":"WebSite","@id":"https://ledger.imagineqira.com/#website","url":"https://ledger.imagineqira.com","name":"Ledger — Evidence layer for AI-assisted work","publisher":{"@id":"https://ledger.imagineqira.com/#org"}}]}</script>
   </head>
   <body>
-    
-    <div id="qira-apps-chrome" aria-label="Qira Apps">
-      <a class="qira-home-link" href="https://imagineqira.com/" title="Qira company site">Qira</a>
-      <qira-product-launcher current-product="ledger" theme="light"></qira-product-launcher>
-    </div>
-
     <div id="root"></div>
-    <script>
-      /* Portal mobile drawer + sync body class. Do NOT inject into React topbar. */
-      (function () {
-        function portalDrawer() {
-          var header = document.querySelector('header.topbar') || document.querySelector('.topbar');
-          if (!header) return false;
-          var nav = header.querySelector('#mobile-nav') || header.querySelector('.mobile-nav');
-          var backdrop = header.querySelector('.menu-backdrop');
-          // Drop stale clones if React re-mounted the drawer inside the header
-          var bodyNavs = document.querySelectorAll('body > #mobile-nav, body > .mobile-nav');
-          var bodyBacks = document.querySelectorAll('body > .menu-backdrop');
-          if (nav) {
-            for (var i = 0; i < bodyNavs.length; i++) {
-              if (bodyNavs[i] !== nav) bodyNavs[i].parentNode.removeChild(bodyNavs[i]);
-            }
-            if (nav.parentNode !== document.body) document.body.appendChild(nav);
-          }
-          if (backdrop) {
-            for (var j = 0; j < bodyBacks.length; j++) {
-              if (bodyBacks[j] !== backdrop) bodyBacks[j].parentNode.removeChild(bodyBacks[j]);
-            }
-            if (backdrop.parentNode !== document.body) document.body.appendChild(backdrop);
-          }
-          return true;
-        }
-        function syncOpen() {
-          var header = document.querySelector('header.topbar') || document.querySelector('.topbar');
-          var open = !!(header && header.classList.contains('is-menu-open'));
-          document.body.classList.toggle('ledger-menu-open', open);
-        }
-        function tick() {
-          portalDrawer();
-          syncOpen();
-        }
-        var n = 0;
-        var id = setInterval(function () {
-          tick();
-          n += 1;
-          if (n > 80) clearInterval(id);
-        }, 100);
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', tick);
-        } else {
-          tick();
-        }
-        try {
-          var mo = new MutationObserver(function () { tick(); });
-          mo.observe(document.documentElement, {
-            childList: true,
-            subtree: true,
-            attributes: true,
-            attributeFilter: ['class', 'aria-expanded', 'aria-hidden'],
-          });
-          // Keep observer: menu open/close toggles class on header
-        } catch (e) {}
-      })();
-    </script>
     <!--
       Clean-URL restore for GitHub Pages. A hard load of /people is served by
       404.html, which redirects to /?/people (a real 200). This restores the
