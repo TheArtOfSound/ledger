@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Review your Flows evidence · Qira Ledger</title>
+  <meta name="description" content="Bring a Flows report into a private Ledger review, keep the original claims visible, and save a record on your device.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+  <link rel="canonical" href="https://ledger.imagineqira.com/from-flows/">
+  <link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/qira-product-bar.css"><link rel="stylesheet" href="/assets/flows-review.css">
+  <script type="module" src="/assets/flows-review.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="qira-product-bar" role="navigation" aria-label="Qira ecosystem"><div class="qira-product-bar__inner"><div class="qira-product-bar__brand"><a href="https://imagineqira.com/">QIRA</a><span aria-hidden="true">/</span><span>Ledger</span></div><div class="qira-product-bar__links"><a href="https://imagineqira.com/journey/">Your Qira workflow</a><a href="https://imagineqira.com/start/?goal=ledger">Getting started</a><a href="https://imagineqira.com/account/">Qira account</a></div></div></div>
+  <header class="shell nav"><a class="brand" href="/">✓ LEDGER</a><nav aria-label="Ledger"><a href="https://flows.oortstack.com/app/evidence">Back to Flows</a><a href="/account">Your account</a></nav></header>
+  <main class="shell" id="main">
+    <p class="eyebrow">Qira · From work to its record</p>
+    <h1>Keep the evidence<br>with the work.</h1>
+    <p class="lede">Review a Flows report, add your notes, and save the record. This review stays in this browser. Nothing is uploaded or published.</p>
+    <section class="card" aria-labelledby="open-heading">
+      <h2 id="open-heading">Your Flows report</h2>
+      <p id="handoff-status" role="status">In Flows, open a run and choose Export proof report → Review in Ledger. You can also open a downloaded JSON report below.</p>
+      <label class="file" for="report-file">Open a Flows JSON report<input id="report-file" type="file" accept="application/json,.json"></label>
+      <p class="small">Up to 2 MB. Choose the evidence report, rather than a run pack or a signed Ledger snapshot.</p>
+      <p id="report-error" class="error" role="alert"></p>
+    </section>
+    <section id="review" class="card" aria-labelledby="review-title" hidden>
+      <p class="label">Imported report · signature not verified</p>
+      <h2 id="review-title" tabindex="-1"></h2>
+      <dl id="report-summary"></dl>
+      <p class="boundary">These are the source report’s claims. This import does not rerun tests, verify a signature, or establish who did the work. A reported pass keeps its original evidence and limits.</p>
+      <label for="review-notes">Your review notes<textarea id="review-notes" rows="5" maxlength="10000" placeholder="What did you inspect? What is still missing?"></textarea></label>
+      <div class="actions"><button id="save-review" type="button">Save private review</button><button id="save-original" class="secondary" type="button">Save original report</button></div>
+      <p class="small">The saved review contains the original report, your notes, and its SHA-256 checksum. A checksum detects a file change; it does not authenticate its author.</p>
+      <details><summary>Inspect the original report</summary><pre id="report-json"></pre></details>
+    </section>
+    <section class="next" aria-labelledby="next-heading"><h2 id="next-heading">Choose your next step</h2><div class="grid">
+      <article><h3>Keep it private</h3><p>Save your review file and return to Flows for the next change. You do not need another account for this review.</p><a href="https://flows.oortstack.com/app/evidence">Continue in Flows →</a></article>
+      <article><h3>Build your Ledger profile</h3><p>Your Qira account owns your Ledger handle. The local collector has its own guided setup and asks before publishing.</p><a href="https://oortstack.com/api/sso/ledger?next=%2Faccount">Continue with Qira →</a><br><a href="/join">Set up local signed records →</a></article>
+      <article><h3>Protect a report</h3><p>Save the file first, then use QEV to encrypt it before sharing. Keep your unlock phrase separately.</p><a href="https://secure.imagineqira.com/">Open QEV →</a></article>
+    </div></section>
+  </main>
+  <footer class="shell"><a href="https://imagineqira.com/journey/">One Qira workflow</a><span>Plan in Flows · Review in Ledger · Protect with QEV</span></footer>
+</body></html>
