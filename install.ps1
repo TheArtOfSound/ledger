@@ -19,10 +19,22 @@ Say 'TOKENS collector installer (Windows)'
 Write-Host ''
 
 if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
-  Die 'git is required. Install it from https://git-scm.com and re-run.'
+  Write-Host ''
+  Write-Host '  Git is not installed. Install it with either:' -ForegroundColor Yellow
+  Write-Host '    winget install Git.Git                       (recommended — Windows 10/11)' -ForegroundColor Cyan
+  Write-Host '    https://git-scm.com/download/win             (manual download)' -ForegroundColor Cyan
+  Write-Host '  Then close and reopen this terminal and run this command again.' -ForegroundColor Yellow
+  Write-Host ''
+  Die 'git is required.'
 }
 if (-not (Get-Command node -ErrorAction SilentlyContinue)) {
-  Die "Node.js $MinNodeMajor+ is required. Install it from https://nodejs.org and re-run."
+  Write-Host ''
+  Write-Host "  Node.js $MinNodeMajor+ is not installed. Install it with either:" -ForegroundColor Yellow
+  Write-Host '    winget install OpenJS.NodeJS.LTS             (recommended — Windows 10/11)' -ForegroundColor Cyan
+  Write-Host '    https://nodejs.org/en/download/              (manual download, choose LTS)' -ForegroundColor Cyan
+  Write-Host '  Then close and reopen this terminal and run this command again.' -ForegroundColor Yellow
+  Write-Host ''
+  Die "Node.js $MinNodeMajor+ is required."
 }
 
 # Do not use `node -p` here. Windows PowerShell can strip the nested quotes from
@@ -38,7 +50,13 @@ if ($nodeVersion -notmatch '^v(?<major>\d+)\.') {
 }
 $nodeMajor = [int]$Matches['major']
 if ($nodeMajor -lt $MinNodeMajor) {
-  Die "Node $MinNodeMajor+ is required (found $nodeVersion)."
+  Write-Host ''
+  Write-Host "  Node.js $MinNodeMajor+ is required, but found $nodeVersion." -ForegroundColor Yellow
+  Write-Host '  Upgrade with:' -ForegroundColor Yellow
+  Write-Host '    winget upgrade OpenJS.NodeJS.LTS' -ForegroundColor Cyan
+  Write-Host '  or download the LTS installer from https://nodejs.org/en/download/' -ForegroundColor Cyan
+  Write-Host ''
+  Die "Node $MinNodeMajor+ required (found $nodeVersion)."
 }
 Info "git: $((git --version).Split(' ')[2])   node: $nodeVersion"
 
