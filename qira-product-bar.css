@@ -54,3 +54,15 @@
     font-size: 12px !important;
   }
 }
+
+/* Ledger has one additional review destination: avoid wrapping the corporate
+   identity strip to a second row at tablet widths. Preserve the relevant
+   evidence-review action and the all-products escape. */
+@media (min-width: 641px) and (max-width: 1000px) {
+  .qira-product-bar__inner { min-height: 48px; flex-wrap: nowrap; gap: 12px; }
+  .qira-product-bar__brand { flex: none; white-space: nowrap; }
+  .qira-product-bar__links { flex: 1; min-width: 0; flex-wrap: nowrap; justify-content: flex-end; gap: 12px; }
+  .qira-product-bar__links > a:nth-child(2),
+  .qira-product-bar__links > a:nth-child(4),
+  .qira-product-bar__links > a:nth-child(5) { display: none !important; }
+}
