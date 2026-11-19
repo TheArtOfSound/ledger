@@ -14,3 +14,56 @@
 .qira-product-bar__links a:last-child{color:#00667c!important}
 @media(max-width:540px){.qira-product-bar__inner{padding:7px 16px;gap:4px 14px}.qira-product-bar__links{gap:14px}.qira-product-bar__links a{font-size:11px!important}.qira-product-bar__brand{min-height:26px}}
 @media(prefers-reduced-motion:reduce){.qira-product-bar *, .qira-product-bar *:before{transition:none!important}}
+
+/* Compact cross-product orientation on phones. The 4–5-link version took
+   110–156px above the product UI at 320px. Keep one direct escape to the
+   directory; the launcher / product UI provides the remaining destinations. */
+@media (max-width: 640px) {
+  .qira-product-bar,
+  .qira-product-bar__inner {
+    min-height: 44px;
+    height: 44px;
+  }
+  .qira-product-bar__inner {
+    padding: 0 12px;
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow: hidden;
+  }
+  .qira-product-bar__brand {
+    flex: 0 0 auto;
+    gap: 6px;
+    white-space: nowrap;
+    min-height: 44px;
+  }
+  .qira-product-bar__brand a { min-height: 44px !important; padding: 0 !important; }
+  .qira-product-bar__links {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+  .qira-product-bar__links > a:not(:first-child) {
+    display: none !important;
+  }
+  .qira-product-bar__links > a:first-child {
+    min-height: 44px;
+    padding: 0 6px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Ledger has one additional review destination: avoid wrapping the corporate
+   identity strip to a second row at tablet widths. Preserve the relevant
+   evidence-review action and the all-products escape. */
+@media (min-width: 641px) and (max-width: 1000px) {
+  .qira-product-bar__inner { min-height: 48px; flex-wrap: nowrap; gap: 12px; }
+  .qira-product-bar__brand { flex: none; white-space: nowrap; }
+  .qira-product-bar__links { flex: 1; min-width: 0; flex-wrap: nowrap; justify-content: flex-end; gap: 12px; }
+  .qira-product-bar__links > a:nth-child(2),
+  .qira-product-bar__links > a:nth-child(4),
+  .qira-product-bar__links > a:nth-child(5) { display: none !important; }
+}

@@ -159,10 +159,13 @@
     _panelMarkup(theme, current, products) {
       var html = "";
       html += "<style>" + STYLES + "</style>";
+      // A product name alone is insufficient when most entries are acronyms.
+      // Display the short task in the same compact, scrollable grid.
+      html += '<style>.qira-launcher__header{align-items:flex-start}.qira-launcher__intro{margin:.2rem 0 0;color:var(--ql-muted);font-size:.71rem;line-height:1.35}.qira-launcher__desc{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal;font-size:.67rem;line-height:1.25;text-align:center;max-width:100%;min-height:2.5em}.qira-launcher__grid{row-gap:.3rem}.qira-launcher__guidance a{color:var(--ql-text);font-size:.75rem;font-weight:500;min-height:32px;display:inline-flex;align-items:center}.qira-launcher__guidance a:focus-visible{outline:2px solid var(--ql-focus);outline-offset:2px}@media(max-width:640px){.qira-launcher__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.25rem}.qira-launcher__tile{padding:.6rem .4rem .65rem}.qira-launcher__guidance{gap:4px 14px!important;padding:9px 16px!important}.qira-launcher__desc{font-size:.71rem}}</style>';
       html += '<div class="qira-launcher qira-launcher--portal" data-theme="' + theme + '" data-open="true" data-qira-launcher="">';
       html += '<button type="button" class="qira-launcher__scrim" aria-label="Close Qira Apps" tabindex="-1" data-close></button>';
       html += '<div id="' + this._panelId + '" class="qira-launcher__panel" role="dialog" aria-modal="true" aria-label="Qira Apps" data-qira-panel part="panel">';
-      html += '<div class="qira-launcher__header"><h2 class="qira-launcher__title">Qira Apps</h2>';
+      html += '<div class="qira-launcher__header"><div><h2 class="qira-launcher__title">Qira Apps</h2><p class="qira-launcher__intro">Choose a tool for your next task.</p></div>';
       html += '<button type="button" class="qira-launcher__close" aria-label="Close Qira Apps" data-close>';
       html += '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>';
       html += "</button></div>";
@@ -170,7 +173,7 @@
       for (var i = 0; i < products.length; i++) {
         html += this._tile(products[i], current);
       }
-      html += '</div><nav class="qira-launcher__guidance" aria-label="Qira guidance" style="display:flex;flex-wrap:wrap;gap:12px;padding:16px;border-top:1px solid var(--ql-border);font-size:12px"><a style="color:var(--ql-text)" href="https://imagineqira.com/">What is Qira?</a><a style="color:var(--ql-text)" href="https://imagineqira.com/start/">Get started</a><a style="color:var(--ql-text)" href="https://imagineqira.com/products/">All products</a><a style="color:var(--ql-text)" href="https://imagineqira.com/account/">Qira account</a></nav></div></div>';
+      html += '</div><nav class="qira-launcher__guidance" aria-label="Qira ecosystem" style="display:flex;flex-wrap:wrap;gap:12px;padding:11px 16px;border-top:1px solid var(--ql-border);font-size:12px"><a href="https://imagineqira.com/start/">Help me choose</a><a href="https://imagineqira.com/products/">All products</a><a href="https://imagineqira.com/account/">Qira account</a></nav></div></div>';
       return html;
     }
 
