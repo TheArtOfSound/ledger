@@ -1,0 +1,154 @@
+/* Ledger's documentary identity — 2026-11-19.
+   Scope all changes to the homepage hero. Product app/account/verification stay untouched.
+   No generic SaaS gradient, no invented live scores, and no removal of the accessible tour. */
+@media (min-width: 960px) {
+  body.jobsite main#top > section.hero {
+    display:grid;
+    grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);
+    grid-template-rows:repeat(5,auto) auto auto auto auto;
+    gap:0 clamp(24px,3.4vw,56px);
+    align-items:start;
+  }
+  body.jobsite main#top > .hero > .hero-pill {grid-column:1;grid-row:1}
+  body.jobsite main#top > .hero > h1 {grid-column:1;grid-row:2}
+  body.jobsite main#top > .hero > p {grid-column:1;grid-row:3}
+  body.jobsite main#top > .hero > .hero-actions {grid-column:1;grid-row:4}
+  body.jobsite main#top > .hero > .hero-facts {grid-column:1;grid-row:5}
+  body.jobsite main#top > .hero > .termdemo {grid-column:2;grid-row:1/6;align-self:center;min-width:0}
+  body.jobsite main#top > .hero > .tour {grid-column:1/-1;grid-row:6;max-width:730px;width:100%;justify-self:center}
+  body.jobsite main#top > .hero > .trust-strip {grid-column:1/-1;grid-row:7}
+  body.jobsite main#top > .hero > .notice {grid-column:1/-1;grid-row:8}
+}
+body.jobsite main#top > section.hero{
+  background:#f8f6f0;
+  border:1px solid #dedfd7;
+  border-radius:12px;
+  padding:clamp(23px,4.1vw,53px);
+  margin:22px 0 34px;
+  box-shadow:0 8px 28px rgba(12,22,33,.035);
+}
+body.jobsite main#top > .hero > .hero-pill{
+  color:#536052;background:#fff;border:1px solid #d7dbd5;
+  border-radius:4px;padding:10px 13px;font:750 11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;
+  letter-spacing:.035em;text-transform:uppercase;
+}
+body.jobsite main#top > .hero > .hero-pill span{background:#18845f}
+body.jobsite main#top > .hero > h1{
+  font-family:system-ui,-apple-system,Segoe UI,sans-serif;
+  font-size:clamp(3.0rem,4.6vw,4.75rem);
+  font-weight:750;line-height:.99;letter-spacing:-.07em;
+  max-width:13.5ch;color:#192320;margin:26px 0 23px;
+  text-wrap:balance;
+}
+body.jobsite main#top > .hero > p{
+  color:#516059;max-width:51ch;
+  font:400 clamp(15px,1.3vw,17px)/1.7 system-ui,sans-serif;
+}
+body.jobsite main#top > .hero > .hero-actions{
+  display:flex;gap:9px;flex-wrap:wrap;margin-top:27px;align-items:center
+}
+body.jobsite main#top > .hero > .hero-actions a{
+  border-radius:5px;min-height:51px;display:inline-flex;align-items:center;justify-content:center;
+  text-align:center;font:750 13px/1.35 system-ui,sans-serif;padding:13px 15px;
+  box-shadow:none;
+}
+body.jobsite main#top > .hero > .hero-actions a:first-child{
+  color:#fff;background:#1c2421;border-color:#1c2421;
+}
+body.jobsite main#top > .hero > .hero-actions a:first-child:hover{background:#314039;border-color:#314039}
+body.jobsite main#top > .hero > .hero-actions a:nth-child(2){
+  background:#fff;border:1px solid #a7b4a9;color:#294a3a;
+}
+body.jobsite main#top > .hero > .hero-actions a:nth-child(2):hover{background:#ecf2ec}
+body.jobsite main#top > .hero > .hero-facts{
+  border:0;margin:20px 0 0;padding:0;gap:7px 13px;
+  flex-wrap:wrap;max-width:540px;
+}
+body.jobsite main#top > .hero > .hero-facts li{
+  border:1px solid #d7dfd7;background:#eef1ea;padding:7px 9px 7px 22px;
+  border-radius:3px;font:650 11px/1.5 system-ui,sans-serif;color:#476253;
+}
+body.jobsite main#top > .hero > .hero-facts li:before{left:9px;top:13px;width:5px;height:5px;background:#34835e}
+body.jobsite main#top > .hero > .termdemo{
+  margin:0;padding:16px;background:#1b2421;border:1px solid #1e2c28;border-radius:9px;
+  box-shadow:12px 13px 0 rgba(23,35,29,.09);
+}
+body.jobsite main#top > .hero > .termdemo::before{
+  content:"01 / WHAT THE LOCAL RECORD LOOKS LIKE · RECORDED DEMO";
+  display:block;font:700 10px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;
+  color:#bfd4c4;letter-spacing:.07em;margin:0 0 14px;
+}
+body.jobsite main#top > .hero .termdemo-frame{
+  box-shadow:none;border-color:#3d4d45;border-radius:6px;
+}
+body.jobsite main#top > .hero .termdemo-body{
+  min-height:230px;font-size:11.5px;line-height:1.6;
+}
+body.jobsite main#top > .hero .termdemo-transcript summary,
+body.jobsite main#top > .hero .termdemo-cap,
+body.jobsite main#top > .hero .termdemo-controls {color:#c8d4ca;font-size:11px;line-height:1.5}
+body.jobsite main#top > .hero .termdemo-cap{margin-top:6px}
+body.jobsite main#top > .hero .termdemo-controls button{color:#fff;border-color:#587263}
+body.jobsite main#top > .hero > .tour{
+  margin:53px auto 0;border-top:1px solid #d9ddd7;padding-top:25px;
+}
+body.jobsite main#top > .hero > .trust-strip{
+  margin:27px 0 0;border-top:1px solid #d4d9d0;padding:24px 0 0;gap:10px;
+}
+body.jobsite main#top > .hero > .trust-strip > div{
+  background:#fff;border:1px solid #d9dfd7;border-radius:5px;padding:18px 17px;
+}
+body.jobsite main#top > .hero > .trust-strip strong{color:#23392e;font:750 14px/1.4 system-ui,sans-serif}
+body.jobsite main#top > .hero > .trust-strip span{color:#596d5f;font:12px/1.55 system-ui,sans-serif}
+body.jobsite main#top > .hero > .notice{
+  border-radius:5px;background:#fff5ea;border-color:#ebd2ab;
+  color:#6d4d27;font-size:12px;line-height:1.5;margin-top:18px;
+}
+body.jobsite main#top > .hero a:focus-visible,body.jobsite main#top > .hero button:focus-visible{
+  outline:3px solid #b4734b;outline-offset:3px;
+}
+@media(max-width:959px){
+  body.jobsite main#top > section.hero{display:flex;flex-direction:column}
+  body.jobsite main#top > .hero > .hero-pill{align-self:flex-start}
+  body.jobsite main#top > .hero > .termdemo{margin-top:35px;width:100%}
+  body.jobsite main#top > .hero > .tour{margin-top:34px}
+  body.jobsite main#top > .hero > .trust-strip{width:100%}
+}
+@media(max-width:650px){
+  body.jobsite main#top > section.hero{
+    border-radius:9px;padding:25px 16px 30px;margin:16px 0 25px;
+    background:#f8f6f0;min-height:0;
+  }
+  body.jobsite main#top > .hero > .hero-pill{font-size:10px;line-height:1.5;max-width:100%;letter-spacing:0}
+  body.jobsite main#top > .hero > h1{
+    font-size:clamp(2.8rem,11vw,3.8rem);
+    max-width:11.5ch;line-height:1.01;
+    margin:22px 0 17px;
+  }
+  body.jobsite main#top > .hero > p{font-size:14px;line-height:1.63;color:#526256}
+  body.jobsite main#top > .hero > .hero-actions{display:grid;width:100%;grid-template-columns:1fr;gap:9px;margin-top:23px}
+  body.jobsite main#top > .hero > .hero-actions a{width:100%;min-height:48px;padding:12px}
+  body.jobsite main#top > .hero > .hero-facts{margin-top:16px;gap:7px}
+  body.jobsite main#top > .hero > .hero-facts li{font-size:10.5px;padding:6px 8px 6px 19px}
+  body.jobsite main#top > .hero > .hero-facts li:before{left:7px;top:12px}
+  body.jobsite main#top > .hero > .termdemo{padding:13px;margin-top:29px;box-shadow:5px 6px 0 rgba(23,35,29,.09)}
+  body.jobsite main#top > .hero > .trust-strip{grid-template-columns:1fr;gap:8px}
+  body.jobsite main#top > .hero > .trust-strip > div{padding:13px}
+  /* The fixed mobile CTA repeated the hero's actions and covered content. It remains on all other routes. */
+  body.jobsite:has(main#top > section.hero) .mobile-cta-bar{display:none}
+  body.jobsite:has(main#top > section.hero){padding-bottom:0}
+}
+@media(prefers-reduced-motion:reduce){
+ body.jobsite main#top > .hero *{scroll-behavior:auto!important;transition:none!important}
+}
+
+/* Mobile evidence chips: compact two-column proof rather than four redundant full-width bars. */
+@media(max-width:650px){
+  body.jobsite main#top > .hero > .hero-facts{
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;width:100%;max-width:none
+  }
+  body.jobsite main#top > .hero > .hero-facts li{
+    min-width:0;line-height:1.45;display:flex;align-items:center
+  }
+  body.jobsite main#top > .hero > .hero-facts li:before{top:50%;transform:translateY(-50%)}
+}
