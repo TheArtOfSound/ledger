@@ -5,6 +5,10 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'verify/index.html'
+      - 'people/index.html'
+      - 'employer/index.html'
+      - '404.html'
       - 'assets/index-qira-e1676cfd7b.js'
       - 'assets/ledger-home-clarity-20261119.css'
       - 'test/ledger-home-contract.test.mjs'
