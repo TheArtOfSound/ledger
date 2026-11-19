@@ -8,7 +8,7 @@ const tick=String.fromCharCode(96);
 assert(html.includes('href="https://ledger.imagineqira.com/"'));
 assert.match(html,/<title>Ledger — Show your AI work with a signed record<\/title>/);
 assert(html.includes('/assets/ledger-home-clarity-20261119.css'));
-assert(html.includes('/assets/index-qira-e1676cfd7b.js?v=claims-20261119'));
+assert(html.includes('/assets/index-qira-e1676cfd7b.js?v=evidence-20261119'));
 assert(html.includes('A signature can establish record integrity, not professional skill.'));
 assert(js.includes('Show your AI work. Back it with a signed record.'));
 assert(js.includes('Your activity · your device · your choice'));
@@ -36,7 +36,7 @@ const people=read('people/index.html');
 const employer=read('employer/index.html');
 const fallback=read('404.html');
 for(const page of [html,verify,people,employer,fallback]){
-  assert(page.includes('/assets/index-qira-e1676cfd7b.js?v=claims-20261119'), 'Critical routes must not ship stale verification claims');
+  assert(page.includes('/assets/index-qira-e1676cfd7b.js?v=evidence-20261119'), 'Critical routes must not ship stale verification claims');
 }
 assert(js.includes('Profiles may point to a Ledger-hosted or self-hosted signed snapshot.'));
 assert(js.includes('View signed snapshot'));
@@ -44,5 +44,9 @@ assert(js.includes('Snapshot link unavailable'));
 assert(!js.includes('Every profile in this directory is backed by a snapshot the member hosts themselves'));
 assert(!js.includes('self-hosted by member'));
 assert(verify.includes('Verify a signed snapshot'), 'Verification metadata must not overstate independence');
+
+assert(!js.includes('record of real AI work — not a self-written résumé'));
+assert(js.includes('These profiles show signed records of AI-tool activity.'));
+assert(js.includes('a signature cannot prove the underlying logs are genuine.'));
 
 console.log('Ledger homepage and claim-boundary source contracts PASS');
