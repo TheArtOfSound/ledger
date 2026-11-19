@@ -1,0 +1,24 @@
+name: Ledger release contracts
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'assets/index-qira-e1676cfd7b.js'
+      - 'assets/ledger-home-clarity-20261119.css'
+      - 'test/ledger-home-contract.test.mjs'
+      - '.github/workflows/ledger-contracts.yml'
+jobs:
+  homepage-and-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Parse bundled JS
+        run: node --check assets/index-qira-e1676cfd7b.js
+      - name: Verify public claims, app paths and mobile layout
+        run: node test/ledger-home-contract.test.mjs
